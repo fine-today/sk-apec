@@ -42,10 +42,12 @@ $(function () {
     }, 5000);
     //$('.swiper-slide[data-slide="1"]').addClass("active");
   });
+  $(window).on("scroll", function (e) {
+    console.log(e);
+  });
 
   $('[data-slide="overview"] .page2 .scroll').on("scroll", function () {
     const scrollY = $(this).scrollTop() / 1080;
-    console.log(scrollY);
     $(".page2 .bg").css({
       transform: `translateY(-${scrollY * 3800}px)`,
     });
@@ -92,7 +94,7 @@ var swiper = new Swiper(".fade-slide", {
 
 //
 var swiper = new Swiper(".overview-slide", {
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 24,
   nested: true,
   mousewheel: {

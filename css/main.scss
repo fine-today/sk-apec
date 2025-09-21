@@ -1,5 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
 // swiper
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -138,64 +140,63 @@
 // slide
 .visual-slide {
   > .swiper-wrapper > .swiper-slide {
-    &[data-slide] {
-      .label {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-family: "DM-serif";
-        font-size: 2rem;
-        line-height: 1.1;
-        border: 1px solid var(--color-black2);
-        color: var(--color-black2);
-        font-weight: 400;
-        background-color: #fff;
-        padding: 1rem 1.8rem;
-        margin-bottom: 3.6rem;
+    .label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "DM-serif";
+      font-size: 2rem;
+      line-height: 1.1;
+      border: 1px solid var(--color-black2);
+      color: var(--color-black2);
+      font-weight: 400;
+      background-color: #fff;
+      padding: 1rem 1.8rem;
+      margin-bottom: 3.6rem;
+    }
+    h2 {
+      font-family: "DM-serif";
+      font-size: 8rem;
+      line-height: 1.1;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 8rem;
+    }
+    .badge {
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.4rem;
+      background-color: #fff;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      color: #000;
+      &.bg-green {
+        background-color: #6bbc6e;
       }
-      h2 {
-        font-family: "DM-serif";
-        font-size: 8rem;
-        line-height: 1.1;
-        font-weight: 400;
-        text-align: left;
-        margin-bottom: 8rem;
+      &.bg-yellow {
+        background-color: #fac02c;
       }
-      .badge {
-        padding: 0.2rem 0.6rem;
-        border-radius: 0.4rem;
-        background-color: #fff;
-        font-weight: 700;
-        font-size: 1.8rem;
-        line-height: 1.5;
-        color: #000;
-        &.bg-green {
-          background-color: #6bbc6e;
-        }
-        &.bg-yellow {
-          background-color: #fac02c;
-        }
-        &.bg-purple {
-          background-color: #9079b6;
-        }
-        &.bg-red {
-          background-color: #ea5550;
-        }
+      &.bg-purple {
+        background-color: #9079b6;
       }
-      .scroll {
-        width: 100%;
-        height: 100%;
-        overflow-y: auto;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-        box-sizing: border-box;
+      &.bg-red {
+        background-color: #ea5550;
       }
-      .wrap {
-        width: 1080px;
-        margin: 0 auto;
-        position: relative;
-      }
+    }
+    .scroll {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      box-sizing: border-box;
+    }
+    .wrap {
+      width: 1080px;
+      margin: 0 auto;
+      position: relative;
+      max-width: 92%;
     }
     &[data-slide="visual"] {
       position: relative;
@@ -254,9 +255,14 @@
         .slogan {
           overflow: hidden;
           margin-top: 7.6rem;
-          height: 174px;
+          height: 21.2rem;
           .text-wrap {
-            height: 174px;
+            height: 21.2rem;
+            color: #fff;
+            font-size: 9.6rem;
+            line-height: 1.1;
+            font-weight: 400;
+            font-family: "DM-serif";
           }
         }
       }
@@ -278,6 +284,10 @@
         }
         .time {
           height: 7.9rem;
+          font-size: 7.2rem;
+          color: #fff;
+          font-family: "DM-serif";
+          line-height: 1.1;
         }
         .info-item {
           display: flex;
@@ -349,12 +359,13 @@
             display: block;
             position: absolute;
             content: "";
-            width: 1200px;
-            height: 646px;
+            width: 120rem;
+            height: 64.6rem;
             z-index: 10;
-            left: calc(50% - 600px + 195px);
-            top: calc(50% - 323px - 43px);
+            left: calc(50% - 60rem + 19.5rem);
+            top: calc(50% - 32.3rem - 4.3rem);
             background: url(../images/section2/bg1.svg) no-repeat center center;
+            background-size: 120rem 64.6rem;
             opacity: 0.6;
           }
         }
@@ -374,12 +385,13 @@
               display: block;
               position: absolute;
               content: "";
-              width: 667px;
-              height: 1200px;
+              width: 66.7rem;
+              height: 120rem;
               background: url(../images/section2/bg2.png) no-repeat center
                 center;
-              right: calc(50% + 124px);
-              top: calc(50% - 749px);
+              background-size: 66.7rem 120rem;
+              right: calc(50% + 12.4rem);
+              top: calc(50% - 74.9rem);
               opacity: 0.6;
               z-index: -1;
             }
@@ -391,8 +403,9 @@
               height: 120rem;
               background: url(../images/section2/bg3.png) no-repeat center
                 center;
-              left: calc(50% + 103px);
-              top: calc(50% - 467px);
+              background-size: 65.3rem 120rem;
+              left: calc(50% + 10.3rem);
+              top: calc(50% - 46.7rem);
               opacity: 0.6;
               z-index: -1;
             }
@@ -405,11 +418,11 @@
             top: 250vh;
             left: 0;
             width: 100%;
-            height: calc(200vh);
+            height: calc(300vh);
             transform: translateZ(-10px) scale(10);
             background: linear-gradient(
               to top,
-              rgba(18, 24, 81, 1) 70%,
+              rgba(18, 24, 81, 1) 80%,
               rgba(18, 24, 81, 0) 90%
             );
 
@@ -424,9 +437,9 @@
         z-index: 20;
         text-align: left;
         width: 1018px;
+        max-width: 92%;
 
         p {
-          margin-top: 8rem;
           font-size: 4rem;
           line-height: 1.5;
           font-weight: 700;
@@ -442,6 +455,7 @@
         .overview-slide {
           .swiper-slide {
             display: block;
+            width: 49.6rem;
             .title {
               font-family: "DM-serif";
               display: block;
@@ -889,6 +903,24 @@
           align-items: center;
           justify-content: center;
         }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 6px;
+  }
+  .header {
+    .gnb {
+      display: none;
+    }
+  }
+  .visual-slide {
+    > .swiper-wrapper > .swiper-slide {
+      &[data-slide="overview"] .page-wrap {
       }
     }
   }
