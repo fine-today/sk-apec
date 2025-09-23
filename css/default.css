@@ -11,10 +11,11 @@ body {
   position: relative;
   height: 100%;
   font-size: 10px;
+  transition: all 0.1s;
 }
 
 body {
-  background: #000;
+  background-color: #fff;
   font-family: "Pretendard", "NotoKr", "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Gulim", "굴림", sans-serif;
   color: var(--color-black);
   margin: 0;
@@ -52,7 +53,8 @@ dd {
 
 /* Remove default list styles */
 ul,
-ol {
+ol,
+li {
   list-style: none;
   box-sizing: border-box;
 }

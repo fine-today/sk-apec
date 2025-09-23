@@ -2,6 +2,7 @@
 
 $(function () {
   var $header = $("#header");
+  var $window = $(window);
 
   var $lang = $header.find(".language"),
     $langBtn = $lang.find(".lang-btn"),
@@ -27,7 +28,7 @@ $(function () {
       $langList.slideUp(100);
     }
   });
-  $(window).on("load", function () {
+  $window.on("load", function () {
     setTimeout(() => {
       $('.swiper-slide[data-slide="visual"]').addClass("sec1");
     }, 1000);
@@ -42,8 +43,21 @@ $(function () {
     }, 5000);
     //$('.swiper-slide[data-slide="1"]').addClass("active");
   });
-  $(window).on("scroll", function (e) {
-    console.log(e);
+  var sectionPosition = [];
+  $window.on("scroll", function (e) {
+    var $this = $(this);
+    var figure = {
+      visualHalf: 0,
+      overviewHalf: 0,
+    };
+    var sectionPosition = [];
+    $("section.sec").each(function () {
+      sectionPosition.push($(this).position().top);
+    });
+    figure.visualHalf = $window.height() / 2;
+    figure.overviewHalf = sectionPosition[2] - $window.height() / 2;
+    if ($(window).scrollTop() > figure.visualHalf) {
+    }
   });
 
   $('[data-slide="overview"] .page2 .scroll').on("scroll", function () {
@@ -54,6 +68,7 @@ $(function () {
   });
 });
 
+/*
 const menuName = [
   { id: 0, name: "visual", text: "" },
   { id: 1, name: "overview", text: "OVERVIEW" },
@@ -62,7 +77,9 @@ const menuName = [
   { id: 4, name: "keynote", text: "KEYNOTE" },
   { id: 5, name: "location", text: "LOCATION" },
 ];
+*/
 
+/*
 var swiper = new Swiper(".visual-slide", {
   direction: "vertical",
   initialSlide: 0,
@@ -80,9 +97,9 @@ var swiper = new Swiper(".visual-slide", {
       return el;
     },
   },
-});
+});*/
 
-//
+/*
 var swiper = new Swiper(".fade-slide", {
   effect: "fade",
   slidesPerView: 1,
@@ -90,7 +107,7 @@ var swiper = new Swiper(".fade-slide", {
   mousewheel: {
     releaseOnEdges: true,
   },
-});
+});*/
 
 //
 var swiper = new Swiper(".overview-slide", {
