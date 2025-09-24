@@ -3,7 +3,6 @@
 $(function () {
   var $header = $("#header");
   var $window = $(window);
-  var $body = $("body");
 
   var $lang = $header.find(".language"),
     $langBtn = $lang.find(".lang-btn"),
@@ -76,16 +75,14 @@ $(function () {
       $body.find(".body-bg").css({ opacity: 1 });
     }
   });*/
-
-  $window.on("scroll", function (e) {
-    var $overview = $("section[data-slide=overview]");
+  $window.on("wheel scroll", function (e) {
+    var $overview = $("section[data-slide='overview']");
     var figure = {
       scrollTop: $window.scrollTop(),
       position: [],
       pageHeight: 0,
       aniGap: 2000,
     };
-
     $("section.sec").each(function () {
       figure.position.push($(this).position().top);
     });
@@ -95,68 +92,67 @@ $(function () {
     });
     $overview.height(figure.pageHeight + figure.aniGap - 100);
 
-    if (figure.scrollTop >= figure.position[1]) {
+    if ($window.scrollTop() >= figure.position[1]) {
       $overview.addClass("page-ani1").removeClass("page-ani2 page-ani-scroll");
-      if (figure.scrollTop > figure.position[1] + $window.outerHeight()) {
+      if ($window.scrollTop() > figure.position[1] + $window.outerHeight()) {
         $overview
           .addClass("page-ani2")
           .removeClass("page-ani1 page-ani-scroll");
       }
       if (
-        figure.scrollTop >
+        $window.scrollTop() >
         figure.position[1] + $window.outerHeight() + figure.aniGap
       ) {
         $overview
           .addClass("page-ani-scroll")
           .removeClass("page-ani1 page-ani2");
       }
-      if (figure.scrollTop >= figure.position[2]) {
+      if ($window.scrollTop() >= figure.position[2]) {
         $overview.removeClass("page-ani1 page-ani2 page-ani-scroll");
       }
-    } else if (figure.scrollTop < figure.position[1]) {
+    } else if ($window.scrollTop() < figure.position[1]) {
       $overview.removeClass("page-ani1 page-ani2 page-ani-scroll");
     }
-  });
 
-  // scroll~ 뿅~
-  $('[data-slide="overview"] .page2').on("scroll", function () {
-    const scrollY = $(this).scrollTop() / 1080;
+    //bg 애니메이션
+    const scrollY =
+      ($(window).scrollTop() - figure.position[1]) /
+      (figure.position[2] - figure.position[1]);
+    console.log(scrollY);
     $(".page2 .bg").css({
-      transform: `translateY(-${scrollY * 3800}px)`,
+      transform: `translateY(-${scrollY * 500}vh)`,
     });
   });
-});
 
-/* gnb-anchor */
-var $htmlBody = $("html, body"),
-  $menuBtn = $(".menu-item .menu-anchor");
-var sectionPosition = [];
+  /* gnb-anchor */
+  var $htmlBody = $("html, body"),
+    $menuBtn = $(".menu-item .menu-anchor");
+  var sectionPosition = [];
 
-$menuBtn.click(function (event) {
-  $("section.sec").each(function () {
-    sectionPosition.push($(this).position().top);
+  $menuBtn.click(function (event) {
+    $("section.sec").each(function () {
+      sectionPosition.push($(this).position().top);
+    });
+    var $this = $(this),
+      thisAnchor = $this.attr("data-anchor");
+    var section = {
+      overview: sectionPosition[1],
+      program: sectionPosition[2],
+      keynote: sectionPosition[4],
+      location: sectionPosition[5],
+    };
+    $htmlBody.animate(
+      {
+        scrollTop: section[thisAnchor],
+      },
+      {
+        duration: 250,
+      }
+    );
+    event.preventDefault();
   });
-  var $this = $(this),
-    thisAnchor = $this.attr("data-anchor");
-  var section = {
-    overview: sectionPosition[1],
-    program: sectionPosition[2],
-    keynote: sectionPosition[4],
-    location: sectionPosition[5],
-  };
-  console.log(thisAnchor);
-  $htmlBody.animate(
-    {
-      scrollTop: section[thisAnchor],
-    },
-    {
-      duration: 250,
-    }
-  );
-  event.preventDefault();
-});
 
-/*
+  /*
 const menuName = [
   { id: 0, name: "visual", text: "" },
   { id: 1, name: "overview", text: "OVERVIEW" },
@@ -167,7 +163,7 @@ const menuName = [
 ];
 */
 
-/*
+  /*
 var swiper = new Swiper(".visual-slide", {
   direction: "vertical",
   initialSlide: 0,
@@ -187,7 +183,7 @@ var swiper = new Swiper(".visual-slide", {
   },
 });*/
 
-/*
+  /*
 var swiper = new Swiper(".fade-slide", {
   effect: "fade",
   slidesPerView: 1,
@@ -197,39 +193,52 @@ var swiper = new Swiper(".fade-slide", {
   },
 });*/
 
-//
-var swiper = new Swiper(".overview-slide", {
-  slidesPerView: "auto",
-  spaceBetween: 24,
-  nested: true,
-  mousewheel: {
-    releaseOnEdges: true,
-  },
-});
+  //
+  var swiper = new Swiper(".overview-slide", {
+    slidesPerView: "auto",
+    spaceBetween: 24,
+    nested: true,
+    mousewheel: {
+      releaseOnEdges: true,
+    },
+  });
 
-//
-var swiper = new Swiper(".speakers-slide", {
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  nested: true,
-  navigation: {
-    nextEl: ".slide-next",
-    prevEl: ".slide-prev",
-  },
-});
+  //
+  var swiper = new Swiper(".speakers-slide", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    nested: true,
+    navigation: {
+      nextEl: ".slide-next",
+      prevEl: ".slide-prev",
+    },
+  });
 
-$(".speakers-slide .slide-wrap").on("click", function () {
-  var $this = $(this),
-    thisModalData = $this.attr("data-modal");
-});
-
-document.querySelectorAll(".scroll").forEach((el) => {
-  el.addEventListener("wheel", (e) => {
-    const atTop = el.scrollTop === 0;
-    const atBottom = el.scrollHeight - el.scrollTop === el.clientHeight;
-
-    if ((!atTop && e.deltaY < 0) || (!atBottom && e.deltaY > 0)) {
-      e.stopPropagation();
+  $(".speakers-slide .slide-wrap").on("click", function () {
+    var $this = $(this),
+      thisModalId = $this.attr("data-modal"),
+      $modalBox = $(".modal-box");
+    $modalBox.addClass("active");
+    // modalData
+    if (modalData) {
+      modalData.forEach(function (elem) {
+        // /console.log(elem.id, thisModalId, speaker);
+        if (elem.id == thisModalId) {
+          const { id, speaker, content } = elem;
+          console.log(speaker);
+          $modalBox.find(".title h2").text(speaker.name);
+          $modalBox.find(".title .role").text(speaker.role);
+          $modalBox.find(".title .company").text(speaker.company);
+          $modalBox.find(".con-wrap .con").html(content);
+          $modalBox
+            .find(".photo > img")
+            .attr({ src: speaker.image, alt: speaker.name });
+        }
+      });
     }
+  });
+
+  $(".modal-box .close").on("click", function () {
+    $(".modal-box").removeClass("active");
   });
 });

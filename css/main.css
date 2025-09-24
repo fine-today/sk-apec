@@ -1,8 +1,4 @@
 @charset "UTF-8";
-::-webkit-scrollbar {
-  display: none;
-}
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -301,6 +297,7 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   transform: rotate(-45deg);
   background: url(../images/section1/ani-logo.png) no-repeat center center;
   background-size: 69rem 67rem;
+  z-index: -1;
 }
 .sec[data-slide=overview] {
   position: relative;
@@ -349,7 +346,7 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
 }
 .sec[data-slide=overview] .page-box {
   width: 100%;
-  height: 500dvh;
+  height: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -417,16 +414,14 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
 }
 .sec[data-slide=overview] .page2 .bg {
   display: block;
-  position: fixed;
+  position: absolute;
   content: "";
-  z-index: 10;
-  top: 250vh;
+  top: calc(300vh + 1500px);
   left: 0;
   width: 100%;
-  height: 300vh;
-  transform: translateZ(-10px) scale(10);
-  background: linear-gradient(to top, rgb(18, 24, 81) 80%, rgba(18, 24, 81, 0) 90%);
-  z-index: -1; /* 콘텐츠 뒤로 */
+  height: calc(200vh + 1000px);
+  background: linear-gradient(to top, rgb(18, 24, 81) 75%, rgba(18, 24, 81, 0) 90%);
+  z-index: 10; /* 콘텐츠 뒤로 */
   transform: translateY(0);
   transition: transform 0.1s ease-out;
 }
@@ -455,6 +450,7 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   margin-right: auto;
   position: relative;
   z-index: 20;
+  max-width: 92%;
 }
 .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide {
   display: block;
@@ -516,6 +512,7 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 8rem;
 }
 .sec[data-slide=overview] .btn-wrap .btn .sub-text {
   font-size: 2.4rem;
@@ -534,6 +531,7 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   width: 4.8rem;
   height: 2.4rem;
   background: url(../images/section2/btn-arrow.svg) no-repeat center center;
+  background-size: contain;
 }
 .sec[data-slide=program] {
   background-color: var(--color-bg);
@@ -616,6 +614,9 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   flex-wrap: wrap;
   gap: 0.4rem;
 }
+.sec[data-slide=program] .badges .hidden-badges {
+  display: none;
+}
 .sec[data-slide=program] .badges .badge {
   padding: 0.2rem 0.6rem;
   border-radius: 0.4rem;
@@ -641,41 +642,55 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
 .sec[data-slide=program] .badges .badge.bg-red {
   background-color: #ea5550;
 }
-.sec[data-slide=keynote] {
+.sec[data-slide=greeting] {
+  overflow: hidden;
+  position: relative;
   align-items: flex-end;
   padding: 7rem 0 8.1rem;
   color: rgba(255, 255, 255, 0.8);
   background-color: var(--color-bg);
 }
-.sec[data-slide=keynote] h2 {
+.sec[data-slide=greeting]::before {
+  display: block;
+  content: "";
+  left: 50%;
+  top: 30%;
+  width: 80%;
+  height: 150%;
+  position: absolute;
+  opacity: 0.2;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  transform: rotate(320deg);
+}
+.sec[data-slide=greeting] h2 {
   margin-bottom: 8.8rem;
   color: #d6d6d6;
 }
-.sec[data-slide=keynote] .wrap {
+.sec[data-slide=greeting] .wrap {
   width: 1536px;
 }
-.sec[data-slide=keynote] .greeting {
+.sec[data-slide=greeting] .greeting {
   position: relative;
 }
-.sec[data-slide=keynote] .greeting p {
+.sec[data-slide=greeting] .greeting p {
   font-size: 2.4rem;
   line-height: 1.5;
   font-weight: 500;
 }
-.sec[data-slide=keynote] .greeting p + p {
+.sec[data-slide=greeting] .greeting p + p {
   margin-top: 2rem;
 }
-.sec[data-slide=keynote] .greeting .host-name {
+.sec[data-slide=greeting] .greeting .host-name {
   margin-top: 6.4rem;
   font-size: 2.4rem;
   line-height: 1.5;
   font-weight: 500;
   color: #fff;
 }
-.sec[data-slide=keynote] .greeting .host-name span {
+.sec[data-slide=greeting] .greeting .host-name span {
   display: block;
 }
-.sec[data-slide=keynote] .greeting .host-img {
+.sec[data-slide=greeting] .greeting .host-img {
   display: block;
   position: absolute;
   bottom: -8.1rem;
@@ -733,7 +748,7 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   overflow: hidden;
   position: relative;
   border-radius: 2.4rem;
-  overflow: hidden;
+  background-color: transparent;
 }
 .sec[data-slide=speakers] .speakers-slide .swiper-slide::before {
   display: block;
@@ -834,6 +849,7 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   display: flex;
   gap: 1.6rem;
   align-items: stretch;
+  padding-bottom: 20rem;
 }
 .sec[data-slide=location] .map {
   flex: 1 50%;
@@ -929,7 +945,6 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   font-weight: 400;
 }
 .sec[data-slide=location] .banner-box {
-  margin-top: 20rem;
   padding-top: 18rem;
   padding-bottom: 14.3rem;
   height: 36rem;
@@ -1009,6 +1024,10 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   top: 0;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.modal-box.active {
+  display: flex;
 }
 .modal-box > .close {
   display: block;
@@ -1020,30 +1039,281 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   color: transparent;
 }
 .modal-box .modal {
-  width: 760px;
-  height: 720px;
+  display: flex;
+  gap: 2.4rem;
+  width: 76rem;
+  height: 72rem;
   max-width: 90vw;
   max-height: 90vh;
   background-color: #fff;
   position: relative;
-  padding: 80px 64px 80px 60px;
+  padding: 8rem 6.4rem 4rem 6rem;
 }
 .modal-box .modal > .close {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   background: url(/images/icons/close.svg) no-repeat center center;
-  right: 24px;
-  top: 24px;
+  right: 2.4rem;
+  top: 2.4rem;
   color: transparent;
 }
+.modal-box .modal .con-wrap {
+  color: #000;
+  flex: 1;
+}
+.modal-box .modal .con-wrap .title h2 {
+  font-family: "DM-serif", "pretendard";
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+.modal-box .modal .con-wrap .title .role {
+  margin-top: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.modal-box .modal .con-wrap .title .company {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+.modal-box .modal .con-wrap .con {
+  height: calc(100% - 150px);
+  margin-top: 4rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal-box .modal .con-wrap .con::-webkit-scrollbar {
+  width: 0.8rem; /* For vertical scrollbars */
+  height: 0.8rem; /* For horizontal scrollbars */
+}
+.modal-box .modal .con-wrap .con::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.modal-box .modal .con-wrap .con::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+.modal-box .modal .con-wrap .con p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #121212;
+  word-break: keep-all;
+}
+.modal-box .modal .photo {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  width: 16rem;
+  height: 19rem;
+  background: linear-gradient(to bottom, #455a5f 0%, #f4f6fb 100%);
+}
+.modal-box .modal .photo img {
+  display: block;
+  position: absolute;
+  width: 18.6rem;
+  height: 21rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: -2.4rem;
+  right: -0.2rem;
+}
 
+@media all and (max-width: 1600px) {
+  html,
+  body {
+    font-size: 9.5px;
+  }
+  .sec[data-slide=overview] .theme-wrap {
+    max-width: 96%;
+    margin-left: 4%;
+    margin-right: 0;
+  }
+  .sec[data-slide=overview] .theme-wrap .swiper {
+    padding-right: 4%;
+  }
+}
 @media all and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+  .header .gnb {
+    display: none;
+  }
+  .sec[data-slide=location] .map,
+  .sec[data-slide=location] .location-info {
+    height: 71rem;
+  }
+  .sec[data-slide=location] .location-info {
+    padding: 4rem 6rem 3rem;
+  }
+}
+@media all and (max-width: 1000px) {
+  .sec[data-slide=visual] .visual-pattern {
+    zoom: 0.7;
+  }
+  .sec[data-slide=location] .wrap {
+    flex-direction: column;
+  }
+  .sec[data-slide=location] .map {
+    order: 2;
+  }
+  .sec[data-slide=location] .location-info {
+    order: 1;
+  }
+  .sec[data-slide=location] .location-info .location-box .location-item .con {
+    font-size: 2rem;
+  }
+  .sec[data-slide=location] .banner-box {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    word-break: keep-all;
+  }
+  .sec[data-slide=location] .banner-box .text {
+    font-size: 3.2rem;
+  }
+  .sec[data-slide=program] .table .table-item .speaker {
+    min-width: 27rem;
+    max-width: 27rem;
+  }
+  .sec[data-slide=greeting] .greeting .host-img {
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }
+}
+@media all and (max-width: 800px) {
   html,
   body {
     font-size: 6px;
   }
-  .header .gnb {
+  .sec[data-slide=program] .wrap {
+    padding-top: 4rem;
+  }
+  .sec[data-slide=location] {
+    padding-top: 4rem;
+  }
+  .sec[data-slide=location] .wrap {
+    padding-bottom: 6rem;
+  }
+  .sec[data-slide=location] .location-info {
+    padding: 0;
+    background: none;
+    color: #fff;
+  }
+  .sec[data-slide=location] .location-info .label {
+    border-color: #fff;
+    color: #fff;
+  }
+  .sec[data-slide=location] .location-info h2 {
+    color: #d6d6d6;
+  }
+  .sec[data-slide=location] .location-info .location-box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .sec[data-slide=location] .location-info .location-box::before {
+    background-color: #fff;
+  }
+  .sec[data-slide=location] .location-info .location-box h3 {
+    font-size: 3.2rem;
+  }
+  .sec[data-slide=location] .location-info .location-box .location-list {
+    gap: 2rem;
+  }
+  .sec[data-slide=location] .location-info .location-box .location-item {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .sec[data-slide=location] .location-info .location-box .location-item .title,
+  .sec[data-slide=location] .location-info .location-box .location-item .con {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 600px) {
+  .sec[data-slide=program] .table .table-list {
+    gap: 8px;
+  }
+  .sec[data-slide=program] .table .table-item {
+    flex-wrap: wrap;
+    gap: 0;
+    border-radius: 1.6rem;
+    overflow: hidden;
+  }
+  .sec[data-slide=program] .table .table-item .time,
+  .sec[data-slide=program] .table .table-item .during,
+  .sec[data-slide=program] .table .table-item .introduce,
+  .sec[data-slide=program] .table .table-item .speaker {
+    min-width: 0;
+    max-width: none;
+  }
+  .sec[data-slide=program] .table .table-item .time {
+    width: 20rem;
+  }
+  .sec[data-slide=program] .table .table-item .during {
+    width: calc(100% - 20rem);
+    justify-content: flex-start;
+    position: relative;
+  }
+  .sec[data-slide=program] .table .table-item .during::before {
+    display: block;
+    position: absolute;
+    left: -0.3rem;
+    top: calc(50% - 1rem);
+    width: 1px;
+    height: 1.6rem;
+    background-color: var(--color-black);
+    content: "";
+  }
+  .sec[data-slide=program] .table .table-item .introduce {
+    display: block;
+    width: 100%;
+    margin-top: 2px;
+  }
+  .sec[data-slide=program] .table .table-item .introduce .badges {
+    margin-bottom: 6px;
+  }
+  .sec[data-slide=program] .table .table-item .introduce .badges .badge {
+    font-size: 12px;
+  }
+  .sec[data-slide=program] .table .table-item .introduce .badges .hidden-badges {
+    display: inline-flex;
+    gap: 2px;
+  }
+  .sec[data-slide=program] .table .table-item .speaker {
     display: none;
+  }
+  .sec[data-slide=greeting] {
+    padding-bottom: 52rem;
+  }
+  .sec[data-slide=greeting] .greeting .host-img {
+    top: calc(100% - 12rem);
+    transform: scale(1);
+    bottom: auto;
+  }
+  .modal-box .modal {
+    flex-direction: column;
+    padding: 4rem 6rem 2rem 3rem;
+  }
+  .modal-box .modal .con-wrap {
+    padding-top: 6rem;
+  }
+  .modal-box .modal .con-wrap .title {
+    padding-right: 20rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  .modal-box .modal .con-wrap .con {
+    height: calc(100% - 47rem);
+  }
+  .modal-box .modal .photo {
+    position: absolute;
+    right: 7rem;
+    min-height: 19rem;
+    top: 7rem;
   }
 }/*# sourceMappingURL=main.css.map */
