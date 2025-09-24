@@ -40,22 +40,30 @@
           <div class="gnb">
             <ul class="menu-list">
               <li class="menu-item">
-                <button type="button" data-anchor="#n" class="menu-anchor">
+                <button
+                  type="button"
+                  data-anchor="overview"
+                  class="menu-anchor"
+                >
                   <span>OVERVIEW</span>
                 </button>
               </li>
               <li class="menu-item">
-                <button type="button" data-anchor="#n" class="menu-anchor">
+                <button type="button" data-anchor="program" class="menu-anchor">
                   <span>PROGRAM</span>
                 </button>
               </li>
               <li class="menu-item">
-                <button type="button" data-anchor="#n" class="menu-anchor">
+                <button type="button" data-anchor="keynote" class="menu-anchor">
                   <span>KEYNOTE</span>
                 </button>
               </li>
               <li class="menu-item">
-                <button type="button" data-anchor="#n" class="menu-anchor">
+                <button
+                  type="button"
+                  data-anchor="location"
+                  class="menu-anchor"
+                >
                   <span>LOCATION</span>
                 </button>
               </li>
@@ -77,63 +85,47 @@
       <!-- <div class="swiper-wrapper"> -->
       <!-- section1 - visual -->
       <section class="sec" data-slide="visual">
-        <article class="first-type">
+        <article class="wrap">
           <h2 class="visual-logo">
-            <div class="img-wrap">
-              <img src="./images/section1/top-logo.svg" alt="" />
-            </div>
+            <img src="./images/section1/top-logo.svg" alt="" />
           </h2>
           <div class="slogan">
-            <div class="text-wrap">
-              2025 APEC CEO SUMMIT, <br />Future Tech Forum Series: AI
-              <!--<img
-                  src="./images/section1/slogan.svg"
-                  alt=""
-                />-->
+            <div class="top-text">2025 APEC CEO SUMMIT,</div>
+            <h3>
+              Future Tech Forum Series:
+              <img src="./images/section1/ai.png" alt="ai" class="ai" />
+            </h3>
+          </div>
+          <div class="visual-info">
+            <div class="time">2025. 10. 28 14:00 - 16:00</div>
+            <div class="visual-info-wrap">
+              <div class="info-item location">경주엑스포공원 문무홀</div>
+              <div class="info-item company">주관사 SK텔레콤, SK하이닉스</div>
             </div>
           </div>
         </article>
-        <article class="visual-info">
-          <div class="time">
-            2025. 10. 28 14:00 - 16:00
-            <!--<img
-                src="./images/section1/time.svg"
-                alt=""
-              />-->
-          </div>
-          <div class="visual-info-wrap">
-            <div class="info-item location">경주엑스포공원 문무홀</div>
-            <div class="info-item company">주관사 SK텔레콤, SK하이닉스</div>
-          </div>
-        </article>
-        <div class="visual-ani"></div>
+        <div class="visual-pattern"></div>
       </section>
 
       <!-- section2 - overview -->
       <section class="sec" data-slide="overview">
-        <article class="page page1">
-          <div class="page-wrap">
-            <span class="label">OVERVIEW</span>
-            <h2>
-              Future Tech Forum<br />
-              AI :
-            </h2>
-            <p>
-              Future Tech Forum AI 세션은 APEC CEO Summit과 함께 열리는 특별
-              프로그램으로, 글로벌 AI 산업 리더, AI 석학, 그리고 정부 고위
-              관료들이 모여 최신 AI 기술과 트렌드, 주요 현안에 대해 심도 깊은
-              논의를 나눕니다.
-            </p>
-          </div>
-        </article>
-        <article class="page page2">
-          <div class="scroll">
+        <div class="page-box">
+          <article class="page page1">
             <div class="page-wrap">
-              <span class="label">OVERVIEW</span>
-              <h2>
-                Future Tech Forum<br />
-                AI :
-              </h2>
+              <span class="label">Overview</span>
+              <h2>2025 APEC CEO SUMMIT,<br />Future Tech Forum Series: AI</h2>
+              <p>
+                Future Tech Forum AI 세션은 APEC CEO Summit과 함께 열리는 특별
+                프로그램으로, 글로벌 AI 산업 리더, AI 석학, 그리고 정부 고위
+                관료들이 모여 최신 AI 기술과 트렌드, 주요 현안에 대해 심도 깊은
+                논의를 나눕니다.
+              </p>
+            </div>
+          </article>
+          <article class="page page2">
+            <div class="page-wrap">
+              <span class="label">Overview</span>
+              <h2>2025 APEC CEO SUMMIT,<br />Future Tech Forum Series: AI</h2>
               <p>
                 본 세션은 공공과 민간을 아우르는 글로벌 AI 정책과 산업에 대한
                 네트워킹 장으로서 참가자 여러분께 세계 AI 담론의 현장을 직접
@@ -187,127 +179,157 @@
             </div>
 
             <div class="bg"></div>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
 
       <!-- section3 - schedule -->
       <section class="sec" data-slide="program">
-        <div class="scroll">
-          <div class="wrap">
-            <span class="label">PROGRAM</span>
-            <h2>
-              our program's<br />
-              process :
-            </h2>
-            <article class="table">
-              <ul class="table-list">
-                <li class="table-item">
-                  <div class="time">14:00 - 14:05</div>
-                  <div class="during">05’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-green">Opening</span>
-                      <span class="badge">사회자</span>
-                    </div>
-                    <div class="con">포럼 취지 및 연사 소개</div>
+        <div class="wrap">
+          <span class="label dark">PROGRAM</span>
+          <h2>our program's process</h2>
+          <article class="table">
+            <ul class="table-list">
+              <li class="table-item">
+                <div class="time">14:00 - 14:05</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-green">Opening</span>
                   </div>
-                </li>
+                  <div class="con">행사 및 주요 인사 소개</div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">사회자</span>
+                  </div>
+                </div>
+              </li>
 
-                <li class="table-item">
-                  <div class="time">14:00 - 14:05</div>
-                  <div class="during">05’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-green">환영사</span>
-                      <span class="badge">국가 AI수석</span>
-                    </div>
-                    <div class="con">
-                      AI G3 도약을 위한 국가 AI 비전과 협력 의지
-                    </div>
+              <li class="table-item">
+                <div class="time">14:00 - 14:05</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-green2">환영사</span>
                   </div>
-                </li>
+                  <div class="con">AI G3 도약을 위한 비전</div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">국가 AI수석</span>
+                  </div>
+                </div>
+              </li>
 
-                <li class="table-item">
-                  <div class="time">14:10 - 14:15</div>
-                  <div class="during">05’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-yellow">기조연설</span>
-                      <span class="badge">SK 그룹 회장</span>
-                    </div>
-                    <div class="con">Building an AI Ecosystem</div>
+              <li class="table-item">
+                <div class="time">14:10 - 14:15</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-yellow">기조연설</span>
                   </div>
-                </li>
+                  <div class="con">
+                    AI 생태계 구축: 한국의 경험과 APEC의 균형 모델
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">SK 그룹 회장</span>
+                  </div>
+                </div>
+              </li>
 
-                <li class="table-item">
-                  <div class="time">14:15 - 14:30</div>
-                  <div class="during">15’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-red">주제 발표</span>
-                      <span class="badge">TBD</span>
-                    </div>
-                    <div class="con">OpenAI for Korea</div>
+              <li class="table-item">
+                <div class="time">14:15 - 14:30</div>
+                <div class="during">15’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-red">주제 발표</span>
                   </div>
-                </li>
+                  <div class="con">
+                    Open Al for Korea, 한국시장의 의미와 생태계 조성 계획
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">Jason Kwon, CSO, OpenAI</span>
+                  </div>
+                </div>
+              </li>
 
-                <li class="table-item">
-                  <div class="time">14:15 - 14:30</div>
-                  <div class="during">15’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-red">주제 발표</span>
-                      <span class="badge">NAVER CEO</span>
-                    </div>
-                    <div class="con">Korean Full-Stack AI and Lessons</div>
+              <li class="table-item">
+                <div class="time">14:30 - 14:45</div>
+                <div class="during">15’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-red">주제 발표</span>
                   </div>
-                </li>
+                  <div class="con">
+                    한국형 풀스택 AI 구축 경험과 산업 적용 교훈
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">NAVER CEO</span>
+                  </div>
+                </div>
+              </li>
 
-                <li class="table-item">
-                  <div class="time">14:45 - 15:15</div>
-                  <div class="during">30’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-purple">1:1 대담</span>
-                      <span class="badge">AWS CEO x Deloitte</span>
-                    </div>
-                    <div class="con">Driving Force for AI Innovation</div>
+              <li class="table-item">
+                <div class="time">14:45 - 15:15</div>
+                <div class="during">30’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-purple">1:1 대담</span>
                   </div>
-                </li>
+                  <div class="con">AI 혁신 위한 동력: Al Infra</div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">AWS CEO x Deloitte</span>
+                  </div>
+                </div>
+              </li>
 
-                <li class="table-item">
-                  <div class="time">15:15 - 15:55</div>
-                  <div class="during">40’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-purple">패널 토의</span>
-                      <span class="badge">국가 AI 수석 AWS</span>
-                      <span class="badge">NAVER</span>
-                      <span class="badge">Stanford</span>
-                      <span class="badge">Deloitte (Moderator)</span>
-                    </div>
-                    <div class="con">
-                      Balancing Innovation,<br />
-                      Ethics and Growth in the APEC AI Ecosystem
-                    </div>
+              <li class="table-item">
+                <div class="time">15:15 - 15:55</div>
+                <div class="during">40’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-purple">패널 토의</span>
                   </div>
-                </li>
+                  <div class="con">
+                    APEC AI 생태계의 혁신, 윤리, 성장의 균형
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">국가 AI 수석 AWS</span>
+                    <span class="badge">NAVER</span>
+                    <span class="badge">Stanford</span>
+                    <span class="badge">Deloitte (Moderator)</span>
+                  </div>
+                </div>
+              </li>
 
-                <li class="table-item">
-                  <div class="time">15:55 - 16:00</div>
-                  <div class="during">05’</div>
-                  <div class="introduce">
-                    <div class="badges">
-                      <span class="badge bg-green">Closing</span>
-                      <span class="badge">사회자</span>
-                    </div>
-                    <div class="con">폐회 및 마무리</div>
+              <li class="table-item">
+                <div class="time">15:55 - 16:00</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-green2">Closing</span>
                   </div>
-                </li>
-              </ul>
-            </article>
-          </div>
+                  <div class="con">폐회 및 마무리</div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">사회자</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -315,10 +337,7 @@
       <section class="sec" data-slide="keynote">
         <div class="scroll">
           <div class="wrap">
-            <span class="label"
-              >Host<br />
-              Greeting</span
-            >
+            <span class="label dark">Host Greeting</span>
             <h2>Chey Tae-won</h2>
             <article class="greeting">
               <p>
@@ -363,7 +382,7 @@
       <!-- section5 - speakers -->
       <section class="sec" data-slide="speakers">
         <div class="wrap">
-          <span class="label">Keynote</span>
+          <span class="label dark">Keynote</span>
           <h2>
             Meet Keynote<br />
             Speakers :
@@ -376,13 +395,18 @@
           <article class="slide-box">
             <div class="swiper speakers-slide">
               <div class="swiper-wrapper">
-                <section class="slide" data-slide="0">
-                  <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-green">환영사</span>
-                    <h3>
-                      하정우
-                      <span class="sub-title">국가 AI 수석</span>
-                    </h3>
+                <section class="swiper-slide" data-slide="0">
+                  <button type="button" data-modal="0" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-green">환영사</span>
+                      <h3>하정우</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">Position (Job Title)</span>
+                        Company/Organization
+                      </h4>
+                    </div>
                     <div class="img">
                       <img src="./images/section5/ha-j.png" alt="하정우" />
                     </div>
@@ -391,24 +415,34 @@
 
                 <section class="swiper-slide special" data-slide="1">
                   <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-yellow">기조연사</span>
-                    <h3>
-                      최태원
-                      <span class="sub-title">SK 그룹 TM</span>
-                    </h3>
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">기조연사</span>
+                      <h3>최태원</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">회장</span>
+                        SK그룹
+                      </h4>
+                    </div>
                     <div class="img">
                       <img src="./images/section5/choi-t.png" alt="최태원" />
                     </div>
                   </button>
                 </section>
 
-                <section class="slide" data-slide="2">
-                  <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-red">주제발표</span>
-                    <h3>
-                      Jason Kwon
-                      <span class="sub-title">OpenAI CSO</span>
-                    </h3>
+                <section class="swiper-slide" data-slide="2">
+                  <button type="button" data-modal="2" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-red">주제발표</span>
+                      <h3>Jason Kwon</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">CSO</span>
+                        OpenAI Korea
+                      </h4>
+                    </div>
                     <div class="img">
                       <img
                         src="./images/section5/kwon-j.png"
@@ -418,26 +452,38 @@
                   </button>
                 </section>
 
-                <section class="slide" data-slide="3">
-                  <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-red">주제발표</span>
-                    <h3>
-                      최수연
-                      <span class="sub-title">NAVER CEO</span>
-                    </h3>
+                <section class="swiper-slide" data-slide="3">
+                  <button type="button" data-modal="3" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-red">주제발표</span>
+                      <h3>최수연</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">CEO</span>
+                        네이버㈜
+                      </h4>
+                    </div>
+
                     <div class="img">
                       <img src="./images/section5/choi-s.png" alt="최수연" />
                     </div>
                   </button>
                 </section>
 
-                <section class="slide" data-slide="4">
-                  <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-purple">1:1 대담</span>
-                    <h3>
-                      Matt Garman
-                      <span class="sub-title">AWS CEO</span>
-                    </h3>
+                <section class="swiper-slide" data-slide="4">
+                  <button type="button" data-modal="4" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-purple">Fireside Chat</span>
+                      <h3>Matt Garman</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">CEO</span>
+                        AWS
+                      </h4>
+                    </div>
+
                     <div class="img">
                       <img
                         src="./images/section5/garman-m.png"
@@ -447,13 +493,19 @@
                   </button>
                 </section>
 
-                <section class="slide" data-slide="5">
-                  <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-purple">1:1 대담</span>
-                    <h3>
-                      Nitin Mittal
-                      <span class="sub-title">Deloitte</span>
-                    </h3>
+                <section class="swiper-slide" data-slide="5">
+                  <button type="button" data-modal="5" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-purple">Moderator</span>
+                      <h3>Nitin Mittal</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">Global AI Leader</span>
+                        Deloitte LLP
+                      </h4>
+                    </div>
+
                     <div class="img">
                       <img
                         src="./images/section5/mittal-n.png"
@@ -463,29 +515,57 @@
                   </button>
                 </section>
 
-                <section class="slide" data-slide="6">
-                  <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-purple">1:1 대담</span>
-                    <h3>
-                      Deloitte
-                      <span class="sub-title">AI석학/스탠포드 교수</span>
-                    </h3>
+                <section class="swiper-slide" data-slide="6">
+                  <button type="button" data-modal="6" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">Panel Discussion</span>
+                      <h3>유영상</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">대표이사 사장</span>
+                        SK 텔레콤
+                      </h4>
+                    </div>
+
                     <div class="img">
-                      <img
-                        src="./images/section5/professor.png"
-                        alt="Deloitte"
-                      />
+                      <img src="./images/section5/you-y.png" alt="Deloitte" />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide" data-slide="7">
+                  <button type="button" data-modal="7" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">Panel Discussion</span>
+                      <h3>최예진</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">교수</span>
+                        스탠퍼드 대학교 인간중심 인공지능 연구소(HAI)
+                      </h4>
+                    </div>
+
+                    <div class="img">
+                      <img src="./images/section5/choi-y.png" alt="Deloitte" />
                     </div>
                   </button>
                 </section>
 
                 <section class="swiper-slide empty" data-slide="7">
-                  <button type="button" data-modal="1" class="slide-wrap">
-                    <span class="badge bg-yellow">패널토의</span>
-                    <h3>
-                      미정
-                      <span class="sub-title">미정</span>
-                    </h3>
+                  <button type="button" data-modal="8" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">Panel Discussion</span>
+                      <h3>미정</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">미정</span>
+                        Company/Organization
+                      </h4>
+                    </div>
+
                     <div class="img">To Be <br />Announced</div>
                   </button>
                 </section>
@@ -497,12 +577,15 @@
 
       <!-- section6 - location -->
       <section class="sec" data-slide="location">
-        <div class="scroll">
-          <div class="wrap">
-            <span class="label">LOCATION</span>
-            <h2>Gyeongju Expo Park</h2>
+        <div class="wrap">
+          <article class="map">
+            <img src="./images/section6/map.png" alt="장소" />
+          </article>
+          <article class="location-info">
+            <span class="label">Location</span>
+            <h2>Gyeongju <br />Expo Park</h2>
             <div class="sub-title">경주엑스포대공원 문무홀</div>
-            <article class="location-box">
+            <div class="location-box">
               <h3>층별 안내</h3>
               <ul class="location-list">
                 <li class="location-item">
@@ -523,30 +606,283 @@
                   >
                 </li>
               </ul>
-            </article>
+            </div>
+          </article>
+          <svg
+            style="position: absolute; width: 0; height: 0"
+            class="bg-filter"
+          >
+            <filter id="monoNoise">
+              <!-- fractal noise 패턴 생성 -->
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="1.2"
+                numOctaves="1"
+                seed="1"
+                stitchTiles="stitch"
+                result="noise"
+              />
+              <!-- 무채색 변환 -->
+              <feColorMatrix
+                type="saturate"
+                values="0"
+                in="noise"
+                result="mono"
+              />
+              <!-- 밝기/투명도 조절 -->
+              <feComponentTransfer>
+                <feFuncR type="linear" slope="0.05" />
+                <feFuncG type="linear" slope="0.05" />
+                <feFuncB type="linear" slope="0.05" />
+              </feComponentTransfer>
+            </filter>
+          </svg>
+        </div>
 
-            <article class="map">
-              <img src="./images/section6/map.png" alt="장소" />
-            </article>
-
-            <article class="banner-box">
-              <div class="text">
-                경주엑스포대공원에 <br />
-                첨단기술 한류문화 전시 'APEC전시장' 건립
-              </div>
-              <a href="#n" target="_blank" class="banner-btn"
-                >경주 포커스 바로가기</a
-              >
-            </article>
-          </div>
+        <div class="banner-wrap">
+          <article class="banner-box">
+            <div class="text">
+              경주엑스포대공원에 첨단기술 한류문화 전시 'APEC전시장' 건립
+            </div>
+            <a href="#n" target="_blank" class="banner-btn"
+              >경주 포커스 바로가기</a
+            >
+          </article>
         </div>
       </section>
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
     <footer class="footer" id="footer">
-      <div class="wrap"></div>
+      <div class="wrap">
+        <div class="footer-left">
+          <img src="./images/footer/logo.svg" alt="sk" />
+          <div class="text">
+            <span>행사사무국</span>
+            <span>skaisummit2025@gmail.com</span>
+          </div>
+        </div>
+        <div class="footer-right">© By SK Telecom All rights reserved.</div>
+      </div>
     </footer>
+
+    <div class="modal-box" data-modal="0">
+      <button type="button" class="close">닫기</button>
+      <div class="modal">
+        <div class="con-wrap">
+          <div class="con">
+            <div class="title">
+              <h2></h2>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <button type="button" class="close">닫기</button>
+      </div>
+    </div>
+
+    <script>
+      var modalCon = [
+        {
+          id: 0,
+          speaker: {
+            name: "하정우",
+            role: "Position (Job Title)",
+            company: "Company/Organization",
+            image: "./images/section5/ha-j.png",
+          },
+          content: `12`,
+        },
+        {
+          id: 0,
+          speaker: {
+            name: "최태원",
+            role: "회장",
+            company: "Company/Organization",
+            image: "SK그룹",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        APEC CEO Summit Korea 2025의 특별 프로그램인 Future Tech Forum – AI에
+        여러분을 모시게 되어 매우 기쁘게 생각합니다.
+      </p>
+
+      <p>
+        이번 포럼은 대한민국 AI 생태계 구축을 주제로, 글로벌 빅테크 기업,
+        세계적인 석학, 그리고 정부 인사들이 함께 모여 AI의 미래를 논의하는 장이
+        될 것입니다. 다양한 통찰과 비전을 공유함으로써, 한국의 혁신이 글로벌
+        협력과 연결되고, 더 넓은 기회로 확장될 수 있기를 기대합니다.
+      </p>
+
+      <p>
+        AI가 산업을 혁신하고, 사회에 새로운 가치를 창출하며, 아시아·태평양
+        지역의 지속 가능한 성장에 기여할 수 있는 길을 함께 모색하고자 합니다.
+      </p>
+
+      <p>
+        여러분의 적극적인 참여를 통해 이번 AI 담론이 더욱 의미 있는 성과로
+        이어지기를 바랍니다.
+      </p>
+    </div>`,
+        },
+        {
+          id: 2,
+          speaker: {
+            name: "Jason Kwon",
+            role: "CSO",
+            company: "OpenAI Korea",
+            image: "./images/section5/kwon-j.png",
+          },
+          content: `12`,
+        },
+        {
+          id: 0,
+          speaker: {
+            name: "최수연",
+            role: "CEO",
+            company: "네이버㈜",
+            image: "./images/section5/choi-s.png",
+          },
+          content: `<div class="con-inner">
+      <p>
+        대한민국 1위 검색엔진 ‘네이버’를 운영하는 국내 최대 인터넷 기업
+        네이버㈜의 대표이사(CEO)입니다.
+      </p>
+      <p>
+        2022년 대표이사 취임 이후, ‘Team NAVER’의 글로벌 확장을 이끌며 네이버를
+        기술 중심 조직으로 전환하는 데 주력해왔다. 클라우드 인프라 운영 고도화,
+        자체 LLM 모델 'HyperCLOVA X' 개발, 그리고 검색·커머스·콘텐츠·핀테크 등
+        다양한 서비스에 AI 기술을 적용하는 등 독자적인 AI full-stack 실행 역량을
+        구축하여 차별화된 사용자 경험을 제공하며 비즈니스 혁신을 주도하고 있다.
+        또한, AI의 안전하고 책임 있는 활용을 적극적으로 강조하며, 2024년 ‘NAVER
+        AI Safety Framework’를 발표하고 AI 세이프티 서밋과 제네바 UN 행사 등
+        국제무대에서 연구 성과를 공유하며 안전한 글로벌 AI 생태계 구축에
+        기여했다.
+      </p>
+      <p>
+        이러한 전략적 리더십과 성과를 인정받아 ▲2022년 포브스 아시아 대표 여성
+        경영인(Asia’s Power Businesswomen) ▲2023·2024년 포브스 세계에서 가장
+        영향력 있는 여성(The World’s 100 Most Powerful Women) ▲2025년 포춘
+        세계에서 가장 영향력 있는 여성 리더(Fortune Most Powerful Women, 32위)에
+        선정되었으며, 2025년 UNGC(UN Global Compact) 이사로 선임되었다.
+      </p>
+      <p>
+        2005년 NHN(현 네이버)에서 커리어를 시작했으며, 2012~2019년 법무법인
+        율촌에서 기업법무 변호사로 근무한 후 2019년 네이버로 복귀해
+        글로벌비즈니스지원 조직을 총괄했고 2022년 대표이사로 선임되었다.
+        서울대학교 지구환경시스템공학과 이학사·언론정보학과 문학사, 연세대학교
+        법학전문대학원 J.D., 하버드대학교 로스쿨 LL.M. 학위를 보유하고 있다.
+      </p>
+    </div>`,
+        },
+        {
+          id: 0,
+          speaker: {
+            name: "Matt Garman",
+            role: "CEO",
+            company: "AWS",
+            image: "./images/section5/garman-m.png",
+          },
+          content: `  
+    <div class="con-inner">
+      <p>세계에서 가장 포괄적이고 널리 채택된 클라우드인 아마존웹서비스(AWS)의 최고경영자입니다. 2006년 AWS에 합류한 이후, 맷 가먼 CEO는 AWS에서 핵심적인 역할을 맡아 회사의 기초가 되는 많은 선구적인 클라우드 서비스를 구축하고 출시했습니다. AWS가 스타트업에서 출발해 현재 1,000억 달러 규모의 연간 매출을 자랑하는 기업으로 성장하는 데 중요한 역할을 했으며, CEO 선임 전에는 AWS 세일즈·마케팅·글로벌서비스 부문 수석 부사장을 역임한 바 있다.</p>
+    </div>`,
+        },
+        {
+          id: 0,
+          speaker: {
+            name: "Nitin Mittal",
+            role: "Global AI Leader",
+            company: "Nitin Mittal",
+            image: "./images/section5/mittal-n.png",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        딜로이트에서 글로벌 AI 프로그램을 이끄는 대표이자, 세계적인 인공지능
+        권위자입니다. 그는 다양한 기업과 기관을 대상으로 AI의 활용 방안과
+        신기술이 비즈니스 전략 및 경쟁 우위에 미치는 영향에 대해 자문해
+        왔습니다. 커리어 전반에 걸쳐 글로벌 주요 기업의 신뢰할 수 있는 조언자로
+        활동하며, 여러 산업과 시장에서 폭넓은 경험을 축적했습니다.
+      </p>
+      <p>
+        또한, 딜로이트에서 AI 시장의 미래를 구상하고, 신기술을 활용해 새로운
+        비즈니스 기회를 창출하는 역할을 맡고 있습니다. 딜로이트 자체를 ‘AI로
+        구동되는 글로벌 조직’으로 변모시키고, 전문 서비스 제공 방식에 혁신을
+        불어넣는 이니셔티브를 주도하고 있습니다.
+      </p>
+      <p>
+        아울러, 그는 All in on AI: How Smart Companies Win Big with Artificial
+        Intelligence의 공동 저자로, 이 책은 출간 직후 「월스트리트 저널」
+        베스트셀러에 올랐습니다.
+      </p>
+    </div>`,
+        },
+        {
+          id: 0,
+          speaker: {
+            name: "유영상",
+            role: "대표이사 사장",
+            company: "SK 텔레콤",
+            image: "./images/section5/you-y.png",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        2021년 11월부터 SK텔레콤 대표이사 사장으로 재임하며, SK텔레콤을 글로벌
+        AI 기업으로 이끌고 있습니다. AI 데이터센터, AI B2B, AI B2C 고도화를
+        핵심으로 하는 ‘AI 피라미드 2.0’ 전략을 바탕으로 자체 역량을 강화하고
+        국내외 파트너십을 심화해, 자강과 협력을 양축으로 AI 성과를 가속화하고
+        있습니다. 또한 SK수펙스추구협의회 ICT위원장과 SK그룹 AI추진단장으로서
+        그룹 전반의 AI 역량을 통합하고 생태계 확장에 힘쓰고 있습니다.
+      </p>
+      <p>
+        이에 앞서 SK텔레콤 MNO 사업대표로서 세계 최초 5G 상용화를 이끌었으며
+        SK하이닉스와 도시바 반도체 등 주요 투자와 M&A를 주도했습니다.
+      </p>
+      <p>
+        University of Washington에서 MBA를, 서울대학교에서 산업공학 학사·석사
+        학위를 취득했습니다.
+      </p>
+    </div>`,
+        },
+        {
+          id: 0,
+          speaker: {
+            name: "최예진",
+            role: "교수",
+            company: "스탠퍼드 대학교 인간중심 인공지능 연구소(HAI)",
+            image: "./images/section5/choi-y.png",
+          },
+          content: `    <div class="con-inner">
+      <p>
+        스탠포드대학교 컴퓨터공학부에서 디터 슈바르츠 재단 석좌교수로 재직하고
+        있으며, 동시에 스탠포드 인간중심 인공지능 연구소(HAI)의 수석연구원으로
+        활동하고 있습니다. 이전에는 워싱턴대학교(University of Washington)
+        교수와 AI2(Allen Institute for AI) 선임이사를 역임했습니다.
+      </p>
+      <p>
+        2022년 맥아더 펠로우(MacArthur Fellow)로 선정되었고, 2024년 AI2050
+        시니어 펠로우, 2023년 「타임(Time)」지가 발표한 ‘AI 분야에서 가장 영향력
+        있는 100인’에 이름을 올렸습니다. 또한, ACL, ICML, NeurIPS, ICCV, CVPR,
+        AAAI 등 세계 최고 수준의 AI 학회에서 ‘Test-of-Time Award’ 2회, ‘최우수
+        논문상·우수 논문상’ 8회를 공동 수상했습니다. 그리고, 2018년 보그
+        신진연구자상(Borg Early Career Award), 2017년 초대 알렉사 프라이즈
+        챌린지 우승, 2016년 IEEE AI’s 10 to Watch에 선정되었습니다. TED 2023
+        메인 무대에 올랐으며, ACL, CVPR, ICLR, MLSys, VLDB, WebConf, AAAI 등
+        여러 AI 분야 국제 학술대회에서 기조연설을 맡았습니다.
+      </p>
+      <p>
+        주요 연구 분야는 대규모 언어모델의 한계와 가능성, 언어모델 대체 학습
+        기법, 뉴럴 네트워크를 위한 상징적 방법, 추론과 지식 발견, 도덕 규범과
+        가치, 다원적 정렬(pluralistic alignment), 그리고 AI 안전성 등입니다.
+      </p>
+    </div>`,
+        },
+      ];
+    </script>
+
     <script src="./js/jquery-2.2.4.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
