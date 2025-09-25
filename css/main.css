@@ -52,6 +52,9 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   color: #000;
 }
 
+html.modal-active body {
+  overflow: hidden;
+}
 .body-bg {
   position: fixed;
   left: 0;
@@ -1123,6 +1126,32 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   right: -0.2rem;
 }
 
+html[lang=en] .sec[data-slide=greeting] .greeting {
+  padding-right: calc(100% - 88rem);
+}
+html[lang=en] .sec[data-slide=speakers] .speakers-slide .swiper-slide .badge-wrap {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+html[lang=en] .sec[data-slide=speakers] .speakers-slide .swiper-slide h4 {
+  margin-top: 1rem;
+}
+html[lang=en] .sec[data-slide=location] .map {
+  min-height: 74.1rem;
+}
+html[lang=en] .sec[data-slide=location] .map img {
+  position: absolute;
+}
+html[lang=en] .sec[data-slide=location] .banner-box {
+  padding-left: calc(50% - 670px);
+  padding-right: calc(50% - 670px);
+}
+html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide {
+  height: 49.8rem;
+}
+
 @media all and (max-width: 1600px) {
   html,
   body {
@@ -1135,6 +1164,9 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   }
   .sec[data-slide=overview] .theme-wrap .swiper {
     padding-right: 4%;
+  }
+  html[lang=en] .sec[data-slide=greeting] .greeting {
+    padding-right: 50rem;
   }
 }
 @media all and (max-width: 1200px) {
@@ -1185,11 +1217,24 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
     transform: scale(0.8);
     transform-origin: bottom right;
   }
+  html[lang=en] .sec[data-slide=greeting] .greeting {
+    padding-right: 35rem;
+  }
 }
 @media all and (max-width: 800px) {
   html,
   body {
     font-size: 6px;
+  }
+  .header {
+    height: 60px;
+  }
+  .header .language .lang-btn {
+    gap: 4px;
+    font-size: 14px;
+  }
+  .header .language .lang-item {
+    font-size: 14px;
   }
   .sec[data-slide=program] .wrap {
     padding-top: 4rem;
@@ -1204,6 +1249,9 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
     padding: 0;
     background: none;
     color: #fff;
+  }
+  .sec[data-slide=location] .location-info::after {
+    display: none;
   }
   .sec[data-slide=location] .location-info .label {
     border-color: #fff;
@@ -1301,6 +1349,9 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
   }
   .modal-box .modal .con-wrap {
     padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
   }
   .modal-box .modal .con-wrap .title {
     padding-right: 20rem;
@@ -1308,12 +1359,15 @@ html[lang=en] .header .language-box .language .lang-list .lang-item.kr:hover {
     padding-top: 3rem;
   }
   .modal-box .modal .con-wrap .con {
-    height: calc(100% - 47rem);
+    flex: 1;
   }
   .modal-box .modal .photo {
     position: absolute;
     right: 7rem;
     min-height: 19rem;
     top: 7rem;
+  }
+  html[lang=en] .sec[data-slide=greeting] .greeting {
+    padding-right: 5rem;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -120,7 +120,7 @@ $(function () {
       (figure.position[2] - figure.position[1]);
     console.log(scrollY);
     $(".page2 .bg").css({
-      transform: `translateY(-${scrollY * 500}vh)`,
+      transform: `translateY(-${scrollY * 400}vh)`,
     });
   });
 
@@ -236,9 +236,11 @@ var swiper = new Swiper(".fade-slide", {
         }
       });
     }
+    $("html").addClass("modal-active");
   });
 
   $(".modal-box .close").on("click", function () {
     $(".modal-box").removeClass("active");
+    $("html").removeClass("modal-active");
   });
 });
