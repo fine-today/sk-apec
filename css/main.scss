@@ -1140,7 +1140,7 @@ html.modal-active {
       position: absolute;
       width: 2.4rem;
       height: 2.4rem;
-      background: url(/images/icons/close.svg) no-repeat center center;
+      background: url(../images/icons/close.svg) no-repeat center center;
       right: 2.4rem;
       top: 2.4rem;
       color: transparent;
@@ -1323,6 +1323,16 @@ html[lang="en"] {
   html[lang="en"] {
     .sec[data-slide="greeting"] .greeting {
       padding-right: 35rem;
+    }
+    .sec[data-slide="location"] {
+      .map,
+      .location-info {
+        min-height: 74rem;
+      }
+      .banner-box {
+        padding-left: 4%;
+        padding-right: 4%;
+      }
     }
   }
 }
