@@ -160,6 +160,8 @@ html.modal-active body {
 }
 
 .sec {
+  position: relative;
+  z-index: 50;
   /*.scroll {
     width: 100%;
     height: 100%;
@@ -229,9 +231,17 @@ html.modal-active body {
   position: relative;
   height: 100dvh;
   overflow: hidden;
+  z-index: 20;
+}
+.sec[data-slide=visual] .section-wrap {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100dvh;
   background: url(../images/section1/visual-bg.png) no-repeat var(--color-bg) center center;
   background-size: cover;
-  z-index: 30;
 }
 .sec[data-slide=visual] .wrap {
   height: 100%;
@@ -303,12 +313,13 @@ html.modal-active body {
   z-index: -1;
 }
 .sec[data-slide=overview] {
-  position: relative;
   overflow: hidden;
+  background-color: #fff;
+  margin-bottom: -5rem;
 }
 .sec[data-slide=overview].page-ani1 .page.page1 {
   position: fixed;
-  z-index: 30;
+  z-index: 40;
   transition: all 0.5s;
 }
 .sec[data-slide=overview].page-ani1 .page.page2 {
@@ -316,7 +327,7 @@ html.modal-active body {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 30;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -324,7 +335,7 @@ html.modal-active body {
   position: fixed;
   opacity: 0;
   transition: all 0.5s;
-  z-index: 30;
+  z-index: 40;
 }
 .sec[data-slide=overview].page-ani2 .page.page2 {
   position: fixed;
@@ -342,9 +353,9 @@ html.modal-active body {
 .sec[data-slide=overview].page-ani-scroll .page.page2 {
   position: absolute;
   left: 0;
-  top: calc(100dvh + 1900px);
+  top: calc(50dvh + 1400px);
   width: 100%;
-  z-index: 20;
+  z-index: 40;
   transition: opacity 0.5s;
 }
 .sec[data-slide=overview] .page-box {
@@ -368,7 +379,7 @@ html.modal-active body {
   top: 0;
   width: 100%;
   height: 100dvh;
-  z-index: 20;
+  z-index: 40;
   background-color: #fff;
 }
 .sec[data-slide=overview] .page1::before {
@@ -388,6 +399,7 @@ html.modal-active body {
 .sec[data-slide=overview] .page2 {
   display: flex;
   flex-direction: column;
+  z-index: 30;
 }
 .sec[data-slide=overview] .page2 .page-wrap::before {
   display: block;
@@ -419,7 +431,7 @@ html.modal-active body {
   display: block;
   position: absolute;
   content: "";
-  top: calc(300vh + 1500px);
+  top: calc(300vh + 1000px);
   left: 0;
   width: 100%;
   height: calc(200vh + 1000px);
@@ -502,6 +514,7 @@ html.modal-active body {
   padding-top: 12rem;
   padding-bottom: 15.4rem;
   position: relative;
+  z-index: 20;
 }
 .sec[data-slide=overview] .btn-wrap .btn {
   z-index: 20;
@@ -774,11 +787,11 @@ html.modal-active body {
   height: 100%;
   background: linear-gradient(to bottom, rgb(69, 90, 95) 0%, rgb(104, 187, 105) 100%);
   content: "";
-  transform: translateY(100%);
+  opacity: 0;
   transition: all 0.3s;
 }
 .sec[data-slide=speakers] .speakers-slide .swiper-slide:hover::after {
-  transform: translateY(0);
+  opacity: 1;
 }
 .sec[data-slide=speakers] .speakers-slide .swiper-slide .slide-wrap {
   display: flex;
@@ -989,6 +1002,8 @@ html.modal-active body {
 }
 
 .footer {
+  position: relative;
+  z-index: 50;
   padding: 6rem;
   background-color: var(--color-black);
   height: 22.9rem;
@@ -1042,15 +1057,20 @@ html.modal-active body {
   color: transparent;
 }
 .modal-box .modal {
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 4rem;
+}
+.modal-box .modal .modal-wrap {
   display: flex;
   gap: 2.4rem;
   width: 76rem;
   height: 72rem;
   max-width: 90vw;
   max-height: 90vh;
-  background-color: #fff;
   position: relative;
-  padding: 8rem 6.4rem 4rem 6rem;
+  padding: 8rem 6.4rem 0 6rem;
+  overflow: auto;
 }
 .modal-box .modal > .close {
   position: absolute;
@@ -1083,10 +1103,8 @@ html.modal-active body {
   font-weight: 700;
 }
 .modal-box .modal .con-wrap .con {
-  height: calc(100% - 150px);
   margin-top: 4rem;
-  overflow-y: auto;
-  overflow-x: hidden;
+  height: auto;
 }
 .modal-box .modal .con-wrap .con::-webkit-scrollbar {
   width: 0.8rem; /* For vertical scrollbars */
@@ -1151,6 +1169,203 @@ html[lang=en] .sec[data-slide=location] .banner-box {
 html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide {
   height: 49.8rem;
 }
+html[lang=en] .sec[data-slide=overview] .page-wrap p {
+  height: 36rem;
+}
+
+.sec .label {
+  transition: all 0.7s;
+  transition-delay: 0.2s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec h2 {
+  transition: all 0.7s;
+  transition-delay: 0.5s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=overview] p {
+  transition: all 0.7s;
+  transition-delay: 0.8s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=overview] .theme-wrap {
+  transition: all 0.7s;
+  transition-delay: 0s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=overview] .btn-wrap {
+  transition: all 0.7s;
+  transition-delay: 0.2s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(1) {
+  transition: all 0.7s;
+  transition-delay: 0.9s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(2) {
+  transition: all 0.7s;
+  transition-delay: 1.2s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(3) {
+  transition: all 0.7s;
+  transition-delay: 1.5s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(4) {
+  transition: all 0.7s;
+  transition-delay: 1.8s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(5) {
+  transition: all 0.7s;
+  transition-delay: 2s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(6) {
+  transition: all 0.7s;
+  transition-delay: 2.2s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(7) {
+  transition: all 0.7s;
+  transition-delay: 2.3s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=program] .table .table-item:nth-child(8) {
+  transition: all 0.7s;
+  transition-delay: 2.4s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=greeting] .greeting {
+  transition: all 0.7s;
+  transition-delay: 0.7s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=greeting] .greeting .host-img {
+  transition: all 0.7s;
+  transition-delay: 1s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=speakers] .speakers-ctrl {
+  transition: all 0.7s;
+  transition-delay: 0.7s;
+  transform: translateY(20rem);
+  opacity: 0;
+  transform: translateY(0);
+}
+.sec[data-slide=speakers] .speakers-slide {
+  transition: all 0.7s;
+  transition-delay: 0.7s;
+  transform: translateY(20rem);
+  opacity: 0;
+  transform: translateY(0) translateX(30rem);
+}
+.sec[data-slide=location] .map {
+  transition: all 0.7s;
+  transition-delay: 0.3s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=location] .location-info {
+  transition: all 0.7s;
+  transition-delay: 0.5s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=location] .location-info h2,
+.sec[data-slide=location] .location-info .label {
+  transition: none;
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec[data-slide=location] .banner-wrap .banner-box .text {
+  transition: all 0.7s;
+  transition-delay: 0s;
+  transform: translateY(5rem);
+  opacity: 0;
+}
+.sec[data-slide=location] .banner-wrap .banner-box .banner-btn {
+  transition: all 0.7s;
+  transition-delay: 0.3s;
+  transform: translateY(5rem);
+  opacity: 0;
+}
+.sec.active .label {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active h2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=overview] p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=overview].page-ani-scroll .theme-wrap {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=overview].page-ani-scroll .btn-wrap {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=program] .table .table-item:nth-child(1),
+.sec.active[data-slide=program] .table .table-item:nth-child(2),
+.sec.active[data-slide=program] .table .table-item:nth-child(3),
+.sec.active[data-slide=program] .table .table-item:nth-child(4),
+.sec.active[data-slide=program] .table .table-item:nth-child(5),
+.sec.active[data-slide=program] .table .table-item:nth-child(6),
+.sec.active[data-slide=program] .table .table-item:nth-child(7),
+.sec.active[data-slide=program] .table .table-item:nth-child(8) {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=greeting] .greeting {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=greeting] .greeting .host-img {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=speakers] .speakers-ctrl {
+  opacity: 1;
+}
+.sec.active[data-slide=speakers] .speakers-slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+.sec.active[data-slide=location] .map {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=location] .location-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=location] .banner-wrap .banner-box.active .text,
+.sec.active[data-slide=location] .banner-wrap .banner-box.active .banner-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
 
 @media all and (max-width: 1600px) {
   html,
@@ -1194,8 +1409,10 @@ html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slid
   }
   .sec[data-slide=location] .map {
     order: 2;
+    transition-delay: 1s;
   }
   .sec[data-slide=location] .location-info {
+    transition-delay: 0.3s;
     order: 1;
   }
   .sec[data-slide=location] .location-info .location-box .location-item .con {
@@ -1291,6 +1508,9 @@ html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slid
   }
 }
 @media all and (max-width: 600px) {
+  .sec[data-slide=overview] .page-wrap p {
+    height: 54rem;
+  }
   .sec[data-slide=program] .table .table-list {
     gap: 8px;
   }
@@ -1351,15 +1571,14 @@ html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slid
     transform: scale(1);
     bottom: auto;
   }
-  .modal-box .modal {
+  .modal-box .modal .modal-wrap {
     flex-direction: column;
-    padding: 4rem 6rem 2rem 3rem;
+    padding: 4rem 6rem 0 3rem;
   }
   .modal-box .modal .con-wrap {
     padding-top: 6rem;
     display: flex;
     flex-direction: column;
-    overflow: auto;
   }
   .modal-box .modal .con-wrap .title {
     padding-right: 20rem;
@@ -1377,5 +1596,10 @@ html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slid
   }
   html[lang=en] .sec[data-slide=greeting] .greeting {
     padding-right: 5rem;
+  }
+}
+@media all and (max-width: 480px) {
+  .sec[data-slide=visual] .slogan h3 {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
