@@ -81,27 +81,51 @@ $(function () {
       scrollTop: $window.scrollTop(),
       position: [],
       pageHeight: 0,
-      aniGap: 2000,
+      aniGap: 1500,
     };
     $("section.sec").each(function () {
       figure.position.push($(this).position().top);
     });
 
-    $overview.find(".page").each(function () {
-      figure.pageHeight = figure.pageHeight + $(this).outerHeight();
+    // section animation
+    $("section.sec").each(function (i, elem) {
+      console.log(i);
+      if ($window.scrollTop() > figure.position[i] - $window.height() * 0.3) {
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
     });
-    $overview.height(figure.pageHeight + figure.aniGap - 100);
+    var $banner = $('section.sec[data-slide="location"] .banner-box');
+    console.log(
+      $window.scrollTop(),
+      $banner.offset().top,
+      $window.height() * 0.3
+    );
+    if ($window.scrollTop() > $banner.offset().top - $window.height() * 0.8) {
+      $banner.addClass("active");
+    } else {
+      $banner.removeClass("active");
+    }
+    figure.pageHeight =
+      $overview.find(".page1").outerHeight() / 2 +
+      $overview.find(".page2").outerHeight();
 
-    if ($window.scrollTop() >= figure.position[1]) {
+    $overview.outerHeight(figure.pageHeight + figure.aniGap);
+
+    if ($window.scrollTop() >= figure.position[1] - 100) {
       $overview.addClass("page-ani1").removeClass("page-ani2 page-ani-scroll");
-      if ($window.scrollTop() > figure.position[1] + $window.outerHeight()) {
+      if (
+        $window.scrollTop() >
+        figure.position[1] + $window.outerHeight() / 2
+      ) {
         $overview
           .addClass("page-ani2")
           .removeClass("page-ani1 page-ani-scroll");
       }
       if (
         $window.scrollTop() >
-        figure.position[1] + $window.outerHeight() + figure.aniGap
+        figure.position[1] + $window.outerHeight() / 2 + figure.aniGap
       ) {
         $overview
           .addClass("page-ani-scroll")
@@ -110,7 +134,7 @@ $(function () {
       if ($window.scrollTop() >= figure.position[2]) {
         $overview.removeClass("page-ani1 page-ani2 page-ani-scroll");
       }
-    } else if ($window.scrollTop() < figure.position[1]) {
+    } else if ($window.scrollTop() < figure.position[1] - 100) {
       $overview.removeClass("page-ani1 page-ani2 page-ani-scroll");
     }
 
@@ -118,10 +142,11 @@ $(function () {
     const scrollY =
       ($(window).scrollTop() - figure.position[1]) /
       (figure.position[2] - figure.position[1]);
-    console.log(scrollY);
     $(".page2 .bg").css({
       transform: `translateY(-${scrollY * 400}vh)`,
     });
+
+    // section ani
   });
 
   /* gnb-anchor */
@@ -222,10 +247,8 @@ var swiper = new Swiper(".fade-slide", {
     // modalData
     if (modalData) {
       modalData.forEach(function (elem) {
-        // /console.log(elem.id, thisModalId, speaker);
         if (elem.id == thisModalId) {
           const { id, speaker, content } = elem;
-          console.log(speaker);
           $modalBox.find(".title h2").text(speaker.name);
           $modalBox.find(".title .role").text(speaker.role);
           $modalBox.find(".title .company").text(speaker.company);
