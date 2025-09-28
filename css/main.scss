@@ -1304,6 +1304,25 @@ html[lang="en"] {
     @include transition(0.5);
   }
 
+  &[data-slide="visual"] {
+    .visual-logo {
+      @include transition(0.3);
+    }
+    .slogan {
+      .top-text {
+        @include transition(0.5);
+      }
+      h3 {
+        @include transition(0.7);
+      }
+    }
+    .visual-info {
+      @include transition(0.9);
+    }
+    .visual-pattern {
+      @include transition(1);
+    }
+  }
   &[data-slide="overview"] {
     p {
       @include transition(0.8);
@@ -1393,6 +1412,30 @@ html[lang="en"] {
     h2 {
       transform: translateY(0);
       opacity: 1;
+    }
+    &[data-slide="visual"] {
+      .visual-logo {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .slogan {
+        .top-text {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        h3 {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .visual-info {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .visual-pattern {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
     &[data-slide="overview"] {
       p {

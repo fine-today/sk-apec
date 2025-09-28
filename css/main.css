@@ -1206,6 +1206,36 @@ html[lang=en] .sec[data-slide=overview] .page-wrap p {
   transform: translateY(20rem);
   opacity: 0;
 }
+.sec[data-slide=visual] .visual-logo {
+  transition: all 0.7s;
+  transition-delay: 0.3s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=visual] .slogan .top-text {
+  transition: all 0.7s;
+  transition-delay: 0.5s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=visual] .slogan h3 {
+  transition: all 0.7s;
+  transition-delay: 0.7s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=visual] .visual-info {
+  transition: all 0.7s;
+  transition-delay: 0.9s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
+.sec[data-slide=visual] .visual-pattern {
+  transition: all 0.7s;
+  transition-delay: 1s;
+  transform: translateY(20rem);
+  opacity: 0;
+}
 .sec[data-slide=overview] p {
   transition: all 0.7s;
   transition-delay: 0.8s;
@@ -1333,6 +1363,26 @@ html[lang=en] .sec[data-slide=overview] .page-wrap p {
   opacity: 1;
 }
 .sec.active h2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=visual] .visual-logo {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=visual] .slogan .top-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=visual] .slogan h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=visual] .visual-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sec.active[data-slide=visual] .visual-pattern {
   transform: translateY(0);
   opacity: 1;
 }

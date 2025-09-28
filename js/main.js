@@ -76,6 +76,9 @@ $(function () {
       $body.find(".body-bg").css({ opacity: 1 });
     }
   });*/
+  $window.on("load", function () {
+    $(".sec[data-slide=visual]").addClass("active");
+  });
   $window.on("wheel scroll", function (e) {
     var $overview = $("section[data-slide='overview']");
     var figure = {
