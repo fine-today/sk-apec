@@ -1,0 +1,3795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+      <meta
+        name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes"
+      />
+      <meta name="keywords" content="@@{siteInfo.siteKwrd}" />
+      <meta name="description" content="@@{siteInfo.siteDc}" />
+      <meta name="theme-color" content="015acd" />
+      <title>APEC KOREA</title>
+
+      <style>
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 900;
+          font-display: swap;
+          src: local("Pretendard Black"),
+            url(./font/pretendard/Pretendard-Black.subset.woff2) format("woff2"),
+            url(./font/pretendard/Pretendard-Black.subset.woff) format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 800;
+          font-display: swap;
+          src: local("Pretendard ExtraBold"),
+            url(./font/pretendard/Pretendard-ExtraBold.subset.woff2)
+              format("woff2"),
+            url(./font/pretendard/Pretendard-ExtraBold.subset.woff)
+              format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-display: swap;
+          src: local("Pretendard Bold"),
+            url(./font/pretendard/Pretendard-Bold.subset.woff2) format("woff2"),
+            url(./font/pretendard/Pretendard-Bold.subset.woff) format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 600;
+          font-display: swap;
+          src: local("Pretendard SemiBold"),
+            url(./font/pretendard/Pretendard-SemiBold.subset.woff2)
+              format("woff2"),
+            url(./font/pretendard/Pretendard-SemiBold.subset.woff)
+              format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 500;
+          font-display: swap;
+          src: local("Pretendard Medium"),
+            url(./font/pretendard/Pretendard-Medium.subset.woff2)
+              format("woff2"),
+            url(./font/pretendard/Pretendard-Medium.subset.woff) format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 400;
+          font-display: swap;
+          src: local("Pretendard Regular"),
+            url(./font/pretendard/Pretendard-Regular.subset.woff2)
+              format("woff2"),
+            url(./font/pretendard/Pretendard-Regular.subset.woff) format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 300;
+          font-display: swap;
+          src: local("Pretendard Light"),
+            url(./font/pretendard/Pretendard-Light.subset.woff2) format("woff2"),
+            url(./font/pretendard/Pretendard-Light.subset.woff) format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 200;
+          font-display: swap;
+          src: local("Pretendard ExtraLight"),
+            url(./font/pretendard/Pretendard-ExtraLight.subset.woff2)
+              format("woff2"),
+            url(./font/pretendard/Pretendard-ExtraLight.subset.woff)
+              format("woff");
+        }
+
+        @font-face {
+          font-family: "Pretendard";
+          font-weight: 100;
+          font-display: swap;
+          src: local("Pretendard Thin"),
+            url(./font/pretendard/Pretendard-Thin.subset.woff2) format("woff2"),
+            url(./font/pretendard/Pretendard-Thin.subset.woff) format("woff");
+        }
+
+        @font-face {
+          font-family: "DM-serif";
+          font-weight: 400;
+          /*font-display: swap;*/
+          src: url(./font/dm-serif.woff2) format("woff2");
+        }
+
+        :root {
+          --color-black: #000;
+          --color-black2: #1d1d1d;
+          --color-bg: #121851;
+        }
+
+        html,
+        body {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          font-size: 10px;
+          transition: all 0.1s;
+        }
+
+        body {
+          background-color: #fff;
+          font-family: "Pretendard", "NotoKr", "Malgun Gothic", "맑은 고딕",
+            "Dotum", "돋움", "Gulim", "굴림", sans-serif;
+          color: var(--color-black);
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+        }
+
+        /* Universal box-sizing */
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+
+        /* Remove default margin and padding */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ol,
+        li,
+        figure,
+        figcaption,
+        blockquote,
+        dl,
+        dd {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        /* Remove default list styles */
+        ul,
+        ol,
+        li {
+          list-style: none;
+          box-sizing: border-box;
+        }
+
+        /* Set a consistent line-height */
+        body {
+          line-height: 1.5;
+        }
+
+        /* Make images and other media responsive */
+        img,
+        picture,
+        video,
+        canvas,
+        svg {
+          max-width: 100%;
+          display: block;
+          box-sizing: border-box;
+        }
+
+        /* Inherit font styles for form elements */
+        input,
+        button,
+        textarea,
+        select {
+          font: inherit;
+        }
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+          margin: 0;
+          padding: 0;
+          border: 1px solid;
+          box-sizing: border-box;
+          color: inherit;
+          font-size: inherit;
+          font-family: inherit;
+          line-height: inherit;
+          vertical-align: middle;
+          box-sizing: border-box;
+        }
+
+        button,
+        input,
+        select {
+          display: inline-block;
+        }
+
+        button,
+        input {
+          overflow: visible;
+        }
+
+        button {
+          background-color: transparent;
+          color: inherit;
+          border: 0;
+          cursor: pointer;
+        }
+
+        a,
+        a:hover,
+        a:visited,
+        a:focus {
+          display: block;
+          text-decoration: none;
+          color: var(--color-black2);
+          box-sizing: border-box;
+        }
+
+        div,
+        span,
+        section {
+          box-sizing: border-box;
+        }
+
+        /**
+ * Swiper 11.2.10
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2025 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: June 28, 2025
+ */
+
+        @font-face {
+          font-family: swiper-icons;
+          src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA");
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        :root {
+          --swiper-theme-color: #007aff;
+        }
+
+        :host {
+          position: relative;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          z-index: 1;
+        }
+
+        .swiper {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          overflow: hidden;
+          list-style: none;
+          padding: 0;
+          z-index: 1;
+          display: block;
+        }
+
+        .swiper-vertical > .swiper-wrapper {
+          flex-direction: column;
+        }
+
+        .swiper-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          display: flex;
+          transition-property: transform;
+          transition-timing-function: var(
+            --swiper-wrapper-transition-timing-function,
+            initial
+          );
+          box-sizing: content-box;
+        }
+
+        .swiper-android .swiper-slide,
+        .swiper-ios .swiper-slide,
+        .swiper-wrapper {
+          transform: translate3d(0px, 0, 0);
+        }
+
+        .swiper-horizontal {
+          touch-action: pan-y;
+        }
+
+        .swiper-vertical {
+          touch-action: pan-x;
+        }
+
+        .swiper-slide {
+          flex-shrink: 0;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transition-property: transform;
+          display: block;
+        }
+
+        .swiper-slide-invisible-blank {
+          visibility: hidden;
+        }
+
+        .swiper-autoheight,
+        .swiper-autoheight .swiper-slide {
+          height: auto;
+        }
+
+        .swiper-autoheight .swiper-wrapper {
+          align-items: flex-start;
+          transition-property: transform, height;
+        }
+
+        .swiper-backface-hidden .swiper-slide {
+          transform: translateZ(0);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .swiper-3d.swiper-css-mode .swiper-wrapper {
+          perspective: 1200px;
+        }
+
+        .swiper-3d .swiper-wrapper {
+          transform-style: preserve-3d;
+        }
+
+        .swiper-3d {
+          perspective: 1200px;
+        }
+
+        .swiper-3d .swiper-cube-shadow,
+        .swiper-3d .swiper-slide {
+          transform-style: preserve-3d;
+        }
+
+        .swiper-css-mode > .swiper-wrapper {
+          overflow: auto;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+
+        .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+          display: none;
+        }
+
+        .swiper-css-mode > .swiper-wrapper > .swiper-slide {
+          scroll-snap-align: start start;
+        }
+
+        .swiper-css-mode.swiper-horizontal > .swiper-wrapper {
+          scroll-snap-type: x mandatory;
+        }
+
+        .swiper-css-mode.swiper-vertical > .swiper-wrapper {
+          scroll-snap-type: y mandatory;
+        }
+
+        .swiper-css-mode.swiper-free-mode > .swiper-wrapper {
+          scroll-snap-type: none;
+        }
+
+        .swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
+          scroll-snap-align: none;
+        }
+
+        .swiper-css-mode.swiper-centered > .swiper-wrapper::before {
+          content: "";
+          flex-shrink: 0;
+          order: 9999;
+        }
+
+        .swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {
+          scroll-snap-align: center center;
+          scroll-snap-stop: always;
+        }
+
+        .swiper-css-mode.swiper-centered.swiper-horizontal
+          > .swiper-wrapper
+          > .swiper-slide:first-child {
+          margin-inline-start: var(--swiper-centered-offset-before);
+        }
+
+        .swiper-css-mode.swiper-centered.swiper-horizontal
+          > .swiper-wrapper::before {
+          height: 100%;
+          min-height: 1px;
+          width: var(--swiper-centered-offset-after);
+        }
+
+        .swiper-css-mode.swiper-centered.swiper-vertical
+          > .swiper-wrapper
+          > .swiper-slide:first-child {
+          margin-block-start: var(--swiper-centered-offset-before);
+        }
+
+        .swiper-css-mode.swiper-centered.swiper-vertical
+          > .swiper-wrapper::before {
+          width: 100%;
+          min-width: 1px;
+          height: var(--swiper-centered-offset-after);
+        }
+
+        .swiper-3d .swiper-slide-shadow,
+        .swiper-3d .swiper-slide-shadow-bottom,
+        .swiper-3d .swiper-slide-shadow-left,
+        .swiper-3d .swiper-slide-shadow-right,
+        .swiper-3d .swiper-slide-shadow-top {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 10;
+        }
+
+        .swiper-3d .swiper-slide-shadow {
+          background: rgba(0, 0, 0, 0.15);
+        }
+
+        .swiper-3d .swiper-slide-shadow-left {
+          background-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          );
+        }
+
+        .swiper-3d .swiper-slide-shadow-right {
+          background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          );
+        }
+
+        .swiper-3d .swiper-slide-shadow-top {
+          background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          );
+        }
+
+        .swiper-3d .swiper-slide-shadow-bottom {
+          background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          );
+        }
+
+        .swiper-lazy-preloader {
+          width: 42px;
+          height: 42px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -21px;
+          margin-top: -21px;
+          z-index: 10;
+          transform-origin: 50%;
+          box-sizing: border-box;
+          border: 4px solid
+            var(--swiper-preloader-color, var(--swiper-theme-color));
+          border-radius: 50%;
+          border-top-color: transparent;
+        }
+
+        .swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader,
+        .swiper:not(.swiper-watch-progress) .swiper-lazy-preloader {
+          animation: swiper-preloader-spin 1s infinite linear;
+        }
+
+        .swiper-lazy-preloader-white {
+          --swiper-preloader-color: #fff;
+        }
+
+        .swiper-lazy-preloader-black {
+          --swiper-preloader-color: #000;
+        }
+
+        @keyframes swiper-preloader-spin {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        .swiper-virtual .swiper-slide {
+          -webkit-backface-visibility: hidden;
+          transform: translateZ(0);
+        }
+
+        .swiper-virtual.swiper-css-mode .swiper-wrapper::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          pointer-events: none;
+        }
+
+        .swiper-virtual.swiper-css-mode.swiper-horizontal
+          .swiper-wrapper::after {
+          height: 1px;
+          width: var(--swiper-virtual-size);
+        }
+
+        .swiper-virtual.swiper-css-mode.swiper-vertical .swiper-wrapper::after {
+          width: 1px;
+          height: var(--swiper-virtual-size);
+        }
+
+        :root {
+          --swiper-navigation-size: 44px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          position: absolute;
+          top: var(--swiper-navigation-top-offset, 50%);
+          width: calc(var(--swiper-navigation-size) / 44 * 27);
+          height: var(--swiper-navigation-size);
+          margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+          z-index: 10;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--swiper-navigation-color, var(--swiper-theme-color));
+        }
+
+        .swiper-button-next.swiper-button-disabled,
+        .swiper-button-prev.swiper-button-disabled {
+          opacity: 0.35;
+          cursor: auto;
+          pointer-events: none;
+        }
+
+        .swiper-button-next.swiper-button-hidden,
+        .swiper-button-prev.swiper-button-hidden {
+          opacity: 0;
+          cursor: auto;
+          pointer-events: none;
+        }
+
+        .swiper-navigation-disabled .swiper-button-next,
+        .swiper-navigation-disabled .swiper-button-prev {
+          display: none !important;
+        }
+
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transform-origin: center;
+        }
+
+        .swiper-rtl .swiper-button-next svg,
+        .swiper-rtl .swiper-button-prev svg {
+          transform: rotate(180deg);
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+          left: var(--swiper-navigation-sides-offset, 10px);
+          right: auto;
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+          right: var(--swiper-navigation-sides-offset, 10px);
+          left: auto;
+        }
+
+        .swiper-button-lock {
+          display: none;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+          font-family: swiper-icons;
+          font-size: var(--swiper-navigation-size);
+          text-transform: none !important;
+          letter-spacing: 0;
+          font-variant: initial;
+          line-height: 1;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+          content: "prev";
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+          right: var(--swiper-navigation-sides-offset, 10px);
+          left: auto;
+        }
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+          content: "next";
+        }
+
+        .swiper-pagination {
+          position: absolute;
+          text-align: center;
+          transition: 0.3s opacity;
+          transform: translate3d(0, 0, 0);
+          z-index: 10;
+        }
+
+        .swiper-pagination.swiper-pagination-hidden {
+          opacity: 0;
+        }
+
+        .swiper-pagination-disabled > .swiper-pagination,
+        .swiper-pagination.swiper-pagination-disabled {
+          display: none !important;
+        }
+
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: var(--swiper-pagination-bottom, 8px);
+          top: var(--swiper-pagination-top, auto);
+          left: 0;
+          width: 100%;
+        }
+
+        .swiper-pagination-bullets-dynamic {
+          overflow: hidden;
+          font-size: 0;
+        }
+
+        .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+          transform: scale(0.33);
+          position: relative;
+        }
+
+        .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+          transform: scale(1);
+        }
+
+        .swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet-active-main {
+          transform: scale(1);
+        }
+
+        .swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet-active-prev {
+          transform: scale(0.66);
+        }
+
+        .swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet-active-prev-prev {
+          transform: scale(0.33);
+        }
+
+        .swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet-active-next {
+          transform: scale(0.66);
+        }
+
+        .swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet-active-next-next {
+          transform: scale(0.33);
+        }
+
+        .swiper-pagination-bullet {
+          width: var(
+            --swiper-pagination-bullet-width,
+            var(--swiper-pagination-bullet-size, 8px)
+          );
+          height: var(
+            --swiper-pagination-bullet-height,
+            var(--swiper-pagination-bullet-size, 8px)
+          );
+          display: inline-block;
+          border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+          background: var(--swiper-pagination-bullet-inactive-color, #000);
+          opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+        }
+
+        button.swiper-pagination-bullet {
+          border: none;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+          -webkit-appearance: none;
+          appearance: none;
+        }
+
+        .swiper-pagination-clickable .swiper-pagination-bullet {
+          cursor: pointer;
+        }
+
+        .swiper-pagination-bullet:only-child {
+          display: none !important;
+        }
+
+        .swiper-pagination-bullet-active {
+          opacity: var(--swiper-pagination-bullet-opacity, 1);
+          background: var(--swiper-pagination-color, var(--swiper-theme-color));
+        }
+
+        .swiper-pagination-vertical.swiper-pagination-bullets,
+        .swiper-vertical > .swiper-pagination-bullets {
+          right: var(--swiper-pagination-right, 8px);
+          left: var(--swiper-pagination-left, auto);
+          top: 50%;
+          transform: translate3d(0px, -50%, 0);
+        }
+
+        .swiper-pagination-vertical.swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-vertical
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;
+          display: block;
+        }
+
+        .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+        .swiper-vertical
+          > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+          top: 50%;
+          transform: translateY(-50%);
+          width: 8px;
+        }
+
+        .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet,
+        .swiper-vertical
+          > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet {
+          display: inline-block;
+          transition: 0.2s transform, 0.2s top;
+        }
+
+        .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+        }
+
+        .swiper-horizontal
+          > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+        .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+          left: 50%;
+          transform: translateX(-50%);
+          white-space: nowrap;
+        }
+
+        .swiper-horizontal
+          > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet {
+          transition: 0.2s transform, 0.2s left;
+        }
+
+        .swiper-horizontal.swiper-rtl
+          > .swiper-pagination-bullets-dynamic
+          .swiper-pagination-bullet {
+          transition: 0.2s transform, 0.2s right;
+        }
+
+        .swiper-pagination-fraction {
+          color: var(--swiper-pagination-fraction-color, inherit);
+        }
+
+        .swiper-pagination-progressbar {
+          background: var(
+            --swiper-pagination-progressbar-bg-color,
+            rgba(0, 0, 0, 0.25)
+          );
+          position: absolute;
+        }
+
+        .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+          background: var(--swiper-pagination-color, var(--swiper-theme-color));
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          transform: scale(0);
+          transform-origin: left top;
+        }
+
+        .swiper-rtl
+          .swiper-pagination-progressbar
+          .swiper-pagination-progressbar-fill {
+          transform-origin: right top;
+        }
+
+        .swiper-horizontal > .swiper-pagination-progressbar,
+        .swiper-pagination-progressbar.swiper-pagination-horizontal,
+        .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+        .swiper-vertical
+          > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+          width: 100%;
+          height: var(--swiper-pagination-progressbar-size, 4px);
+          left: 0;
+          top: 0;
+        }
+
+        .swiper-horizontal
+          > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+        .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite,
+        .swiper-pagination-progressbar.swiper-pagination-vertical,
+        .swiper-vertical > .swiper-pagination-progressbar {
+          width: var(--swiper-pagination-progressbar-size, 4px);
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
+
+        .swiper-pagination-lock {
+          display: none;
+        }
+
+        .swiper-scrollbar {
+          border-radius: var(--swiper-scrollbar-border-radius, 10px);
+          position: relative;
+          touch-action: none;
+          background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));
+        }
+
+        .swiper-scrollbar-disabled > .swiper-scrollbar,
+        .swiper-scrollbar.swiper-scrollbar-disabled {
+          display: none !important;
+        }
+
+        .swiper-horizontal > .swiper-scrollbar,
+        .swiper-scrollbar.swiper-scrollbar-horizontal {
+          position: absolute;
+          left: var(--swiper-scrollbar-sides-offset, 1%);
+          bottom: var(--swiper-scrollbar-bottom, 4px);
+          top: var(--swiper-scrollbar-top, auto);
+          z-index: 50;
+          height: var(--swiper-scrollbar-size, 4px);
+          width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+        }
+
+        .swiper-scrollbar.swiper-scrollbar-vertical,
+        .swiper-vertical > .swiper-scrollbar {
+          position: absolute;
+          left: var(--swiper-scrollbar-left, auto);
+          right: var(--swiper-scrollbar-right, 4px);
+          top: var(--swiper-scrollbar-sides-offset, 1%);
+          z-index: 50;
+          width: var(--swiper-scrollbar-size, 4px);
+          height: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+        }
+
+        .swiper-scrollbar-drag {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, 0.5));
+          border-radius: var(--swiper-scrollbar-border-radius, 10px);
+          left: 0;
+          top: 0;
+        }
+
+        .swiper-scrollbar-cursor-drag {
+          cursor: move;
+        }
+
+        .swiper-scrollbar-lock {
+          display: none;
+        }
+
+        .swiper-zoom-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .swiper-zoom-container > canvas,
+        .swiper-zoom-container > img,
+        .swiper-zoom-container > svg {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+
+        .swiper-slide-zoomed {
+          cursor: move;
+          touch-action: none;
+        }
+
+        .swiper .swiper-notification {
+          position: absolute;
+          left: 0;
+          top: 0;
+          pointer-events: none;
+          opacity: 0;
+          z-index: -1000;
+        }
+
+        .swiper-free-mode > .swiper-wrapper {
+          transition-timing-function: ease-out;
+          margin: 0 auto;
+        }
+
+        .swiper-grid > .swiper-wrapper {
+          flex-wrap: wrap;
+        }
+
+        .swiper-grid-column > .swiper-wrapper {
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+
+        .swiper-fade.swiper-free-mode .swiper-slide {
+          transition-timing-function: ease-out;
+        }
+
+        .swiper-fade .swiper-slide {
+          pointer-events: none;
+          transition-property: opacity;
+        }
+
+        .swiper-fade .swiper-slide .swiper-slide {
+          pointer-events: none;
+        }
+
+        .swiper-fade .swiper-slide-active {
+          pointer-events: auto;
+        }
+
+        .swiper-fade .swiper-slide-active .swiper-slide-active {
+          pointer-events: auto;
+        }
+
+        .swiper.swiper-cube {
+          overflow: visible;
+        }
+
+        .swiper-cube .swiper-slide {
+          pointer-events: none;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          z-index: 1;
+          visibility: hidden;
+          transform-origin: 0 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-cube .swiper-slide .swiper-slide {
+          pointer-events: none;
+        }
+
+        .swiper-cube.swiper-rtl .swiper-slide {
+          transform-origin: 100% 0;
+        }
+
+        .swiper-cube .swiper-slide-active,
+        .swiper-cube .swiper-slide-active .swiper-slide-active {
+          pointer-events: auto;
+        }
+
+        .swiper-cube .swiper-slide-active,
+        .swiper-cube .swiper-slide-next,
+        .swiper-cube .swiper-slide-prev {
+          pointer-events: auto;
+          visibility: visible;
+        }
+
+        .swiper-cube .swiper-cube-shadow {
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          width: 100%;
+          height: 100%;
+          opacity: 0.6;
+          z-index: 0;
+        }
+
+        .swiper-cube .swiper-cube-shadow:before {
+          content: "";
+          background: #000;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          filter: blur(50px);
+        }
+
+        .swiper-cube .swiper-slide-next + .swiper-slide {
+          pointer-events: auto;
+          visibility: visible;
+        }
+
+        .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-bottom,
+        .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-left,
+        .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-right,
+        .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-top {
+          z-index: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .swiper.swiper-flip {
+          overflow: visible;
+        }
+
+        .swiper-flip .swiper-slide {
+          pointer-events: none;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          z-index: 1;
+        }
+
+        .swiper-flip .swiper-slide .swiper-slide {
+          pointer-events: none;
+        }
+
+        .swiper-flip .swiper-slide-active,
+        .swiper-flip .swiper-slide-active .swiper-slide-active {
+          pointer-events: auto;
+        }
+
+        .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-bottom,
+        .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-left,
+        .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-right,
+        .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-top {
+          z-index: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .swiper-creative .swiper-slide {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          overflow: hidden;
+          transition-property: transform, opacity, height;
+        }
+
+        .swiper.swiper-cards {
+          overflow: visible;
+        }
+
+        .swiper-cards .swiper-slide {
+          transform-origin: center bottom;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          overflow: hidden;
+        }
+
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .swiper-pagination-bullet {
+          opacity: 1;
+          width: auto;
+          height: auto;
+          margin: 0;
+        }
+
+        .swiper-pagination-vertical.swiper-pagination-bullets,
+        .swiper-vertical > .swiper-pagination-bullets {
+          transform: none;
+        }
+
+        .swiper-pagination-clickable .swiper-pagination-bullet {
+          background: none;
+          color: var(--color-black2);
+        }
+
+        .swiper-pagination-bullet-active {
+          background: none;
+        }
+
+        .swiper-pagination-vertical.swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-vertical
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          margin: 0;
+          display: flex;
+        }
+
+        html[lang="ko"]
+          .header
+          .language-box
+          .language
+          .lang-list
+          .lang-item.en {
+          color: rgba(0, 0, 0, 0.2);
+        }
+        html[lang="ko"]
+          .header
+          .language-box
+          .language
+          .lang-list
+          .lang-item.en:hover {
+          color: #000;
+        }
+
+        html[lang="en"]
+          .header
+          .language-box
+          .language
+          .lang-list
+          .lang-item.kr {
+          color: rgba(0, 0, 0, 0.2);
+        }
+        html[lang="en"]
+          .header
+          .language-box
+          .language
+          .lang-list
+          .lang-item.kr:hover {
+          color: #000;
+        }
+
+        html.modal-active body {
+          overflow: hidden;
+        }
+        .body-bg {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 10;
+          width: 100%;
+          height: 100%;
+          transition: opacity 0.2s;
+        }
+
+        #wrapper {
+          position: relative;
+          z-index: 20;
+        }
+
+        .header {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 100;
+          width: 100%;
+          height: 7.1rem;
+        }
+        .header .header-wrap {
+          width: 100%;
+          height: 100%;
+          padding: 1rem 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #fff;
+        }
+        .header .logos {
+          display: flex;
+          align-items: center;
+          gap: 1.8rem;
+          width: 300px;
+        }
+        .header .gnb .menu-list {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 100px;
+        }
+        .header .gnb .menu-item.visual,
+        .header .gnb .menu-item.greeting {
+          display: none;
+        }
+        .header .gnb .menu-item .menu-anchor {
+          text-decoration: none;
+        }
+        .header .gnb .menu-item .menu-anchor > span {
+          color: var(--color-black2);
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 1.1;
+        }
+        .header .language-box {
+          display: flex;
+          justify-content: flex-end;
+          width: 300px;
+        }
+        .header .language {
+          position: relative;
+        }
+        .header .language .lang-btn {
+          display: flex;
+          align-items: center;
+          font-size: 1.6rem;
+          color: var(--color-black);
+          font-weight: 700;
+          gap: 0.2rem;
+        }
+        .header .language .lang-btn::after {
+          display: block;
+          content: "";
+          width: 1.6rem;
+          height: 1.6rem;
+          background: url(../images/icons/lang-btn-arrow.svg) no-repeat center
+            center;
+        }
+        .header .language .lang-list {
+          top: calc(100% + 1.2rem);
+          left: calc(50% - 0.2rem);
+          transform: translateX(-50%);
+          position: absolute;
+          display: none;
+          background-color: #fff;
+          width: auto;
+          padding: 1.2rem 1.6rem;
+          gap: 1.2rem;
+          border: 1px solid #e2e3ea;
+          box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+          border-radius: 1.6rem;
+        }
+        .header .language .lang-list .lang-item {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          font-size: 1.6rem;
+          color: var(--color-black);
+          font-weight: 700;
+          padding: 1rem;
+          transition: all 0.2s;
+        }
+
+        .sec {
+          position: relative;
+          z-index: 50;
+          /*.scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+  }*/
+        }
+        .sec .label {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-family: "DM-serif";
+          font-size: 2rem;
+          line-height: 1.08;
+          border: 2px solid var(--color-black2);
+          color: var(--color-black2);
+          font-weight: 400;
+          background-color: transparent;
+          padding: 1rem 1.8rem;
+          margin-bottom: 3.6rem;
+          border-radius: 1.2rem;
+        }
+        .sec .label.dark {
+          border-color: #fff;
+          color: #fff;
+        }
+        .sec h2 {
+          font-family: "DM-serif";
+          font-size: 8rem;
+          line-height: 1.1;
+          font-weight: 400;
+          text-align: left;
+          margin-bottom: 8rem;
+          letter-spacing: -0.01em;
+        }
+        .sec .badge {
+          padding: 0.2rem 0.6rem;
+          border-radius: 0.4rem;
+          background-color: #fff;
+          font-weight: 700;
+          font-size: 1.8rem;
+          line-height: 1.5;
+          color: #000;
+        }
+        .sec .badge.bg-green {
+          background-color: #6bbc6e;
+        }
+        .sec .badge.bg-yellow {
+          background-color: #fac02c;
+        }
+        .sec .badge.bg-purple {
+          background-color: #9079b6;
+        }
+        .sec .badge.bg-red {
+          background-color: #ea5550;
+        }
+        .sec .wrap {
+          width: 1536px;
+          margin: 0 auto;
+          position: relative;
+          max-width: 92%;
+        }
+        .sec[data-slide="visual"] {
+          position: relative;
+          height: 100dvh;
+          overflow: hidden;
+          z-index: 20;
+        }
+        .sec[data-slide="visual"] .section-wrap {
+          display: block;
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100dvh;
+          background: url(../images/section1/visual-bg.png) no-repeat
+            var(--color-bg) center center;
+          background-size: cover;
+        }
+        .sec[data-slide="visual"] .wrap {
+          height: 100%;
+          width: 1280px;
+          padding-top: 6.2rem;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .sec[data-slide="visual"] .visual-logo {
+          margin-bottom: 0;
+        }
+        .sec[data-slide="visual"] .slogan {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 10.9rem;
+          gap: 4rem;
+          color: #fff;
+          font-family: "DM-serif";
+        }
+        .sec[data-slide="visual"] .slogan .top-text {
+          font-size: 6rem;
+          line-height: 1.1;
+          font-weight: 400;
+        }
+        .sec[data-slide="visual"] .slogan h3 {
+          font-size: 8.4rem;
+          line-height: 1.1;
+          font-weight: 400;
+          width: 71rem;
+        }
+        .sec[data-slide="visual"] .slogan h3 .ai {
+          display: inline-block;
+          -o-object-fit: contain;
+          object-fit: contain;
+          width: 8.7rem;
+          height: 6.5rem;
+          position: relative;
+          top: 0.5rem;
+        }
+        .sec[data-slide="visual"] .visual-info {
+          width: 100%;
+          margin-top: 11.7rem;
+        }
+        .sec[data-slide="visual"] .visual-info .time {
+          font-size: 3.6rem;
+          color: #fff;
+          font-family: "DM-serif";
+          line-height: 1.1;
+          font-weight: 400;
+          padding-bottom: 2.4rem;
+        }
+        .sec[data-slide="visual"] .visual-info .info-item {
+          color: #fff;
+          font-size: 2rem;
+          font-weight: 700;
+          width: 72rem;
+        }
+        .sec[data-slide="visual"] .visual-pattern {
+          position: absolute;
+          right: 12rem;
+          bottom: -10rem;
+          width: 69rem;
+          height: 67rem;
+          transform: rotate(-45deg);
+          background: url(../images/section1/ani-logo.png) no-repeat center
+            center;
+          background-size: 69rem 67rem;
+          z-index: -1;
+        }
+        .sec[data-slide="overview"] {
+          overflow: hidden;
+          background-color: #fff;
+          margin-bottom: -5rem;
+        }
+        .sec[data-slide="overview"].page-ani1 .page.page1 {
+          position: fixed;
+          z-index: 40;
+          transition: all 0.5s;
+        }
+        .sec[data-slide="overview"].page-ani1 .page.page2 {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          z-index: 30;
+          opacity: 0;
+          transition: all 0.5s;
+        }
+        .sec[data-slide="overview"].page-ani2 .page.page1 {
+          position: fixed;
+          opacity: 0;
+          transition: all 0.5s;
+          z-index: 40;
+        }
+        .sec[data-slide="overview"].page-ani2 .page.page2 {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          opacity: 1;
+          transition: none;
+        }
+        .sec[data-slide="overview"].page-ani-scroll .page.page1 {
+          z-index: -1;
+          opacity: 0;
+          transition: all 0.5s;
+        }
+        .sec[data-slide="overview"].page-ani-scroll .page.page2 {
+          position: absolute;
+          left: 0;
+          top: calc(50dvh + 1400px);
+          width: 100%;
+          z-index: 40;
+          transition: opacity 0.5s;
+        }
+        .sec[data-slide="overview"] .page-box {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+        .sec[data-slide="overview"] .page {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+        }
+        .sec[data-slide="overview"] .page1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100dvh;
+          z-index: 40;
+          background-color: #fff;
+        }
+        .sec[data-slide="overview"] .page1::before {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 120rem;
+          height: 64.6rem;
+          z-index: 10;
+          left: calc(50% - 60rem + 19.5rem);
+          top: calc(50% - 32.3rem - 4.3rem);
+          background: url(../images/section2/bg1.svg) no-repeat center center;
+          background-size: 120rem 64.6rem;
+          opacity: 0.6;
+          transition: all 0.4s;
+        }
+        .sec[data-slide="overview"] .page2 {
+          display: flex;
+          flex-direction: column;
+          z-index: 30;
+        }
+        .sec[data-slide="overview"] .page2 .page-wrap::before {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 66.7rem;
+          height: 120rem;
+          background: url(../images/section2/bg2.png) no-repeat center center;
+          background-size: 66.7rem 120rem;
+          right: calc(50% + 12.4rem);
+          top: calc(50% - 74.9rem);
+          opacity: 0.6;
+          z-index: -1;
+        }
+        .sec[data-slide="overview"] .page2 .page-wrap::after {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 65.3rem;
+          height: 120rem;
+          background: url(../images/section2/bg3.png) no-repeat center center;
+          background-size: 65.3rem 120rem;
+          left: calc(50% + 10.3rem);
+          top: calc(50% - 46.7rem);
+          opacity: 0.6;
+          z-index: -1;
+        }
+        .sec[data-slide="overview"] .page2 .bg {
+          display: block;
+          position: absolute;
+          content: "";
+          top: calc(300vh + 1000px);
+          left: 0;
+          width: 100%;
+          height: calc(200vh + 1000px);
+          background: linear-gradient(
+            to top,
+            rgb(18, 24, 81) 75%,
+            rgba(18, 24, 81, 0) 90%
+          );
+          z-index: 10; /* 콘텐츠 뒤로 */
+          transform: translateY(0);
+          transition: transform 0.1s ease-out;
+        }
+        .sec[data-slide="overview"] .page-wrap {
+          position: relative;
+          z-index: 20;
+          width: 1018px;
+          max-width: 92%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          text-align: left;
+          margin: 0 auto;
+          height: 100dvh;
+        }
+        .sec[data-slide="overview"] .page-wrap p {
+          font-size: 4rem;
+          line-height: 1.5;
+          font-weight: 700;
+        }
+        .sec[data-slide="overview"] .theme-wrap {
+          width: 1536px;
+          margin-top: 25.4rem;
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          z-index: 20;
+          max-width: 92%;
+        }
+        .sec[data-slide="overview"] .theme-wrap .overview-slide .swiper-slide {
+          display: block;
+          width: 49.6rem;
+        }
+        .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide
+          .title {
+          font-family: "DM-serif";
+          display: block;
+          height: 31rem;
+          background-color: #ddd;
+          padding: 5rem;
+          text-align: left;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        }
+        .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide
+          .title
+          .text {
+          font-size: 5rem;
+          font-weight: 400;
+          color: var(--color-black);
+          line-height: 1.1;
+        }
+        .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide
+          .con {
+          background-color: #fff;
+          padding: 4rem 5rem;
+          text-align: left;
+        }
+        .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide
+          .con
+          .text {
+          font-size: 2.4rem;
+          font-weight: 700;
+          line-height: 1.5;
+        }
+        .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide[data-slide="theme"]
+          .title {
+          background-image: url(../images/section2/theme.png);
+        }
+        .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide[data-slide="program"]
+          .title {
+          background-image: url(../images/section2/program.png);
+        }
+        .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide[data-slide="benefits"]
+          .title {
+          background-image: url(../images/section2/benefits.png);
+        }
+        .sec[data-slide="overview"] .btn-wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 12rem;
+          padding-bottom: 15.4rem;
+          position: relative;
+          z-index: 20;
+        }
+        .sec[data-slide="overview"] .btn-wrap .btn {
+          z-index: 20;
+          color: #fff;
+          width: 49.5rem;
+          height: 14.4rem;
+          background: url(../images/section2/btn.png) no-repeat center center;
+          padding: 2.8rem 2.4rem;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          border-radius: 8rem;
+        }
+        .sec[data-slide="overview"] .btn-wrap .btn .sub-text {
+          font-size: 2.4rem;
+        }
+        .sec[data-slide="overview"] .btn-wrap .btn .main-text {
+          display: flex;
+          align-items: center;
+          font-size: 3.6rem;
+          gap: 2rem;
+          margin-left: 6.8rem;
+        }
+        .sec[data-slide="overview"] .btn-wrap .btn .main-text::after {
+          display: block;
+          position: relative;
+          content: "";
+          width: 4.8rem;
+          height: 2.4rem;
+          background: url(../images/section2/btn-arrow.svg) no-repeat center
+            center;
+          background-size: contain;
+        }
+        .sec[data-slide="program"] {
+          background-color: var(--color-bg);
+          color: #fff;
+        }
+        .sec[data-slide="program"] h2 {
+          position: relative;
+          padding-bottom: 6rem;
+        }
+        .sec[data-slide="program"] h2::after {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          left: 0;
+          bottom: 0;
+          background-color: #fff;
+        }
+        .sec[data-slide="program"] .wrap {
+          width: 1536px;
+          max-width: 92%;
+          margin: 0 auto;
+          padding: 18rem 0 7.3rem;
+        }
+        .sec[data-slide="program"] .table .table-list {
+          display: flex;
+          flex-direction: column;
+          gap: 0.4rem;
+          border-radius: 1.6rem;
+          overflow: hidden;
+        }
+        .sec[data-slide="program"] .table .table-item {
+          display: flex;
+          align-items: stretch;
+          justify-content: space-between;
+          gap: 0.4rem;
+        }
+        .sec[data-slide="program"] .table .table-item > * {
+          padding: 2.4rem;
+          background-color: #202769;
+        }
+        .sec[data-slide="program"] .table .table-item .time,
+        .sec[data-slide="program"] .table .table-item .during {
+          font-family: "DM-serif";
+          font-weight: 400;
+          font-size: 2.8rem;
+          line-height: 1.2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        .sec[data-slide="program"] .table .table-item .time {
+          min-width: 22.8rem;
+          max-width: 22.8rem;
+        }
+        .sec[data-slide="program"] .table .table-item .during {
+          min-width: 14rem;
+          max-width: 14rem;
+        }
+        .sec[data-slide="program"] .table .table-item .introduce {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4rem;
+          flex: 1;
+        }
+        .sec[data-slide="program"] .table .table-item .introduce .con {
+          font-size: 2.8rem;
+          line-height: 1.5;
+          font-weight: 600;
+        }
+        .sec[data-slide="program"] .table .table-item .speaker {
+          min-width: 32rem;
+          max-width: 32rem;
+        }
+        .sec[data-slide="program"] .badges {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.4rem;
+        }
+        .sec[data-slide="program"] .badges .hidden-badges {
+          display: none;
+        }
+        .sec[data-slide="program"] .badges .badge {
+          padding: 0.2rem 0.6rem;
+          border-radius: 0.4rem;
+          background-color: #fff;
+          font-weight: 700;
+          font-size: 1.8rem;
+          line-height: 1.5;
+          color: #000;
+          white-space: pre;
+        }
+        .sec[data-slide="program"] .badges .badge.bg-green {
+          background-color: #00ffbd;
+        }
+        .sec[data-slide="program"] .badges .badge.bg-green2 {
+          background-color: #6bbc6e;
+        }
+        .sec[data-slide="program"] .badges .badge.bg-yellow {
+          background-color: #fac02c;
+        }
+        .sec[data-slide="program"] .badges .badge.bg-purple {
+          background-color: #9079b6;
+        }
+        .sec[data-slide="program"] .badges .badge.bg-red {
+          background-color: #ea5550;
+        }
+        .sec[data-slide="greeting"] {
+          overflow: hidden;
+          position: relative;
+          align-items: flex-end;
+          padding: 7rem 0 8.1rem;
+          color: rgba(255, 255, 255, 0.8);
+          background-color: var(--color-bg);
+        }
+        .sec[data-slide="greeting"]::before {
+          display: block;
+          content: "";
+          left: 50%;
+          top: 30%;
+          width: 80%;
+          height: 150%;
+          position: absolute;
+          opacity: 0.2;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgb(0, 0, 0) 100%
+          );
+          transform: rotate(320deg);
+        }
+        .sec[data-slide="greeting"] h2 {
+          margin-bottom: 8.8rem;
+          color: #d6d6d6;
+        }
+        .sec[data-slide="greeting"] .wrap {
+          width: 1536px;
+        }
+        .sec[data-slide="greeting"] .greeting {
+          position: relative;
+        }
+        .sec[data-slide="greeting"] .greeting p {
+          font-size: 2.4rem;
+          line-height: 1.5;
+          font-weight: 500;
+        }
+        .sec[data-slide="greeting"] .greeting p + p {
+          margin-top: 2rem;
+        }
+        .sec[data-slide="greeting"] .greeting .host-name {
+          margin-top: 6.4rem;
+          font-size: 2.4rem;
+          line-height: 1.5;
+          font-weight: 500;
+          color: #fff;
+        }
+        .sec[data-slide="greeting"] .greeting .host-name span {
+          display: block;
+        }
+        .sec[data-slide="greeting"] .greeting .host-img {
+          display: block;
+          position: absolute;
+          bottom: -8.1rem;
+          right: 0;
+          width: 48rem;
+          height: 64rem;
+        }
+        .sec[data-slide="speakers"] {
+          padding-top: 16rem;
+          padding-bottom: 5.4rem;
+          background-color: var(--color-bg);
+          color: #fff;
+        }
+        .sec[data-slide="speakers"] h2 {
+          color: #d6d6d6;
+        }
+        .sec[data-slide="speakers"] .wrap {
+          width: 1536px;
+          margin: 0 auto;
+          position: relative;
+        }
+        .sec[data-slide="speakers"] .slide-box {
+          width: calc(50% + 50vw);
+          overflow: hidden;
+        }
+        .sec[data-slide="speakers"] .speakers-ctrl {
+          display: flex;
+          justify-content: flex-end;
+          position: absolute;
+          width: 1536px;
+          left: 0;
+          top: 21rem;
+          gap: 0.9rem;
+        }
+        .sec[data-slide="speakers"] .speakers-ctrl button {
+          width: 6rem;
+          height: 2rem;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+        }
+        .sec[data-slide="speakers"] .speakers-ctrl .slide-prev {
+          background-image: url(../images/section5/nav-left.svg);
+        }
+        .sec[data-slide="speakers"] .speakers-ctrl .slide-next {
+          background-image: url(../images/section5/nav-right.svg);
+        }
+        .sec[data-slide="speakers"] .speakers-slide {
+          overflow: visible;
+          padding-right: 5rem;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide {
+          width: 37.2rem;
+          height: 52rem;
+          overflow: hidden;
+          position: relative;
+          border-radius: 2.4rem;
+          background-color: transparent;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide::before {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 10;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom, #455a5f 0%, #f4f6fb 100%);
+          content: "";
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide::after {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 20;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            to bottom,
+            rgb(69, 90, 95) 0%,
+            rgb(104, 187, 105) 100%
+          );
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide:hover::after {
+          opacity: 1;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide .slide-wrap {
+          display: flex;
+          text-align: left;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          z-index: 30;
+          position: relative;
+          padding: 2.4rem 2rem;
+          color: #fff;
+          width: 100%;
+          height: 100%;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide .badge-wrap {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+        }
+        .sec[data-slide="speakers"]
+          .speakers-slide
+          .swiper-slide
+          .badge-wrap
+          h3 {
+          font-size: 2.4rem;
+          line-height: 1.5;
+          font-weight: 700;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide .badge {
+          padding: 0.2rem 1.2rem;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide h4 {
+          padding-left: 0.4rem;
+          margin-top: 0.8rem;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          color: #d0d0d0;
+        }
+        .sec[data-slide="speakers"]
+          .speakers-slide
+          .swiper-slide
+          h4
+          .sub-title {
+          display: block;
+          color: #d0d0d0;
+          font-weight: 400;
+          font-size: 1.4rem;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide .img {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 42rem;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide .img img {
+          display: block;
+          width: inherit;
+          height: inherit;
+          -o-object-fit: contain;
+          object-fit: contain;
+        }
+        .sec[data-slide="speakers"] .speakers-slide .swiper-slide.empty .img {
+          display: flex;
+          align-items: flex-end;
+          color: rgba(35, 24, 21, 0.6);
+          font-family: "DM-serif";
+          font-size: 5.2rem;
+          line-height: 1.1;
+          font-weight: 400;
+          padding: 0 3.2rem 4.6rem;
+          text-transform: uppercase;
+        }
+        .sec[data-slide="location"] {
+          padding-top: 16rem;
+          background-color: var(--color-bg);
+        }
+        .sec[data-slide="location"] .wrap {
+          display: flex;
+          gap: 1.6rem;
+          align-items: stretch;
+          padding-bottom: 20rem;
+        }
+        .sec[data-slide="location"] .map {
+          flex: 1 50%;
+          height: 100%;
+          min-height: 69.6rem;
+          border-radius: 1.6rem;
+          overflow: hidden;
+          position: relative;
+        }
+        .sec[data-slide="location"] .map img {
+          -o-object-fit: cover;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          display: block;
+          min-height: 69.6rem;
+        }
+        .sec[data-slide="location"] .location-info {
+          box-sizing: border-box;
+          position: relative;
+          overflow: hidden;
+          flex: 1 50%;
+          background: linear-gradient(
+            to bottom,
+            rgb(104, 187, 105) 0%,
+            rgba(104, 187, 105, 0.4) 100%
+          );
+          background-color: #fff;
+          border-radius: 1.6rem;
+          padding: 6rem 8rem 3.6rem;
+        }
+        .sec[data-slide="location"] .location-info::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          filter: url(#monoNoise);
+          background: rgba(0, 0, 0, 0.01);
+          opacity: 0.2;
+          mix-blend-mode: multiply; /* overlay, soft-light 등도 시도 가능 */
+          pointer-events: none;
+        }
+        .sec[data-slide="location"] .location-info .label {
+          margin-bottom: 0.8rem;
+        }
+        .sec[data-slide="location"] .location-info h2 {
+          line-height: 1.2;
+          color: #231815;
+          margin-bottom: 2rem;
+        }
+        .sec[data-slide="location"] .location-info .sub-title {
+          font-size: 2.8rem;
+          font-weight: 700;
+          line-height: 1.4;
+        }
+        .sec[data-slide="location"] .location-info .location-box {
+          margin-top: 6rem;
+          padding: 6rem 4rem 4rem 4rem;
+          position: relative;
+        }
+        .sec[data-slide="location"] .location-info .location-box::before {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #000;
+          content: "";
+        }
+        .sec[data-slide="location"] .location-info .location-box h3 {
+          font-size: 2rem;
+          line-height: 1.4;
+          font-weight: 700;
+        }
+        .sec[data-slide="location"]
+          .location-info
+          .location-box
+          .location-list {
+          display: flex;
+          flex-direction: column;
+          gap: 1.2rem;
+          width: 100%;
+          margin-top: 1.6rem;
+        }
+        .sec[data-slide="location"]
+          .location-info
+          .location-box
+          .location-item {
+          display: flex;
+          width: 100%;
+        }
+        .sec[data-slide="location"]
+          .location-info
+          .location-box
+          .location-item
+          .title {
+          min-width: 8.4rem;
+          font-size: 1.6rem;
+          line-height: 1.4;
+          font-weight: 600;
+        }
+        .sec[data-slide="location"]
+          .location-info
+          .location-box
+          .location-item
+          .con {
+          flex: 1;
+          display: block;
+          font-size: 1.6rem;
+          line-height: 1.4;
+          font-weight: 400;
+        }
+        .sec[data-slide="location"] .banner-box {
+          padding-top: 18rem;
+          padding-bottom: 14.3rem;
+          height: 36rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: url(../images/section6/banner.png) no-repeat center center;
+          background-size: cover;
+          flex-direction: column;
+          overflow: hidden;
+        }
+        .sec[data-slide="location"] .banner-box .text {
+          font-size: 4rem;
+          line-height: 1.2;
+          font-weight: 600;
+          color: #fff;
+        }
+        .sec[data-slide="location"] .banner-box .banner-btn {
+          margin-top: 4rem;
+          background-color: #000;
+          padding: 2rem 3.2rem;
+          color: #fff;
+          font-size: 2.4rem;
+          line-height: 1;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2.5rem;
+        }
+        .sec[data-slide="location"] .banner-box .banner-btn::after {
+          display: block;
+          content: "";
+          width: 6rem;
+          height: 2rem;
+          background: url(../images/section5/nav-right.svg) no-repeat center
+            center;
+          background-size: contain;
+        }
+
+        .footer {
+          position: relative;
+          z-index: 50;
+          padding: 6rem;
+          background-color: var(--color-black);
+          height: 22.9rem;
+          color: #4f4f4f;
+        }
+        .footer .wrap {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+        }
+        .footer .footer-left .text {
+          margin-top: 3.6rem;
+          display: flex;
+          gap: 12px;
+          align-items: center;
+        }
+        .footer .footer-left .text span {
+          font-weight: 700;
+          line-height: 1.2;
+          font-size: 1.6rem;
+        }
+        .footer .footer-right {
+          font-weight: 700;
+          line-height: 1.2;
+          font-size: 1.6rem;
+        }
+
+        .modal-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 9999;
+          background-color: rgba(0, 0, 0, 0.4);
+          display: none;
+        }
+        .modal-box.active {
+          display: flex;
+        }
+        .modal-box > .close {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: transparent;
+        }
+        .modal-box .modal {
+          position: relative;
+          background-color: #fff;
+          padding-bottom: 4rem;
+        }
+        .modal-box .modal .modal-wrap {
+          display: flex;
+          gap: 2.4rem;
+          width: 76rem;
+          height: 72rem;
+          max-width: 90vw;
+          max-height: 90vh;
+          position: relative;
+          padding: 8rem 6.4rem 0 6rem;
+          overflow: auto;
+        }
+        .modal-box .modal > .close {
+          position: absolute;
+          width: 2.4rem;
+          height: 2.4rem;
+          background: url(../images/icons/close.svg) no-repeat center center;
+          right: 2.4rem;
+          top: 2.4rem;
+          color: transparent;
+        }
+        .modal-box .modal .con-wrap {
+          color: #000;
+          flex: 1;
+        }
+        .modal-box .modal .con-wrap .title h2 {
+          font-family: "DM-serif", "pretendard";
+          font-size: 4rem;
+          line-height: 1.1;
+          font-weight: 400;
+        }
+        .modal-box .modal .con-wrap .title .role {
+          margin-top: 0.8rem;
+          font-size: 1.6rem;
+          line-height: 1.6;
+          font-weight: 400;
+        }
+        .modal-box .modal .con-wrap .title .company {
+          font-size: 1.6rem;
+          line-height: 1.6;
+          font-weight: 700;
+        }
+        .modal-box .modal .con-wrap .con {
+          margin-top: 4rem;
+          height: auto;
+        }
+        .modal-box .modal .con-wrap .con::-webkit-scrollbar {
+          width: 0.8rem; /* For vertical scrollbars */
+          height: 0.8rem; /* For horizontal scrollbars */
+        }
+        .modal-box .modal .con-wrap .con::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        .modal-box .modal .con-wrap .con::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 6px; /* Rounded corners for the thumb */
+        }
+        .modal-box .modal .con-wrap .con p {
+          font-size: 1.6rem;
+          line-height: 1.5;
+          font-weight: 500;
+          color: #121212;
+          word-break: keep-all;
+        }
+        .modal-box .modal .photo {
+          display: block;
+          position: relative;
+          overflow: hidden;
+          border-radius: 1.6rem;
+          width: 16rem;
+          height: 19rem;
+          background: linear-gradient(to bottom, #455a5f 0%, #f4f6fb 100%);
+        }
+        .modal-box .modal .photo img {
+          display: block;
+          position: absolute;
+          width: 18.6rem;
+          height: 21rem;
+          -o-object-fit: cover;
+          object-fit: cover;
+          bottom: -2.4rem;
+          right: -0.2rem;
+        }
+
+        html[lang="en"] .sec[data-slide="greeting"] .greeting {
+          padding-right: calc(100% - 88rem);
+        }
+        html[lang="en"]
+          .sec[data-slide="speakers"]
+          .speakers-slide
+          .swiper-slide
+          .badge-wrap {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 0.6rem;
+        }
+        html[lang="en"]
+          .sec[data-slide="speakers"]
+          .speakers-slide
+          .swiper-slide
+          h4 {
+          margin-top: 1rem;
+        }
+        html[lang="en"] .sec[data-slide="location"] .map {
+          min-height: 74.1rem;
+        }
+        html[lang="en"] .sec[data-slide="location"] .map img {
+          position: absolute;
+        }
+        html[lang="en"] .sec[data-slide="location"] .banner-box {
+          padding-left: calc(50% - 670px);
+          padding-right: calc(50% - 670px);
+        }
+        html[lang="en"]
+          .sec[data-slide="overview"]
+          .theme-wrap
+          .overview-slide
+          .swiper-slide {
+          height: 49.8rem;
+        }
+        html[lang="en"] .sec[data-slide="overview"] .page-wrap p {
+          height: 36rem;
+        }
+
+        .sec .label {
+          transition: all 0.7s;
+          transition-delay: 0.2s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec h2 {
+          transition: all 0.7s;
+          transition-delay: 0.5s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="overview"] p {
+          transition: all 0.7s;
+          transition-delay: 0.8s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="overview"] .theme-wrap {
+          transition: all 0.7s;
+          transition-delay: 0s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="overview"] .btn-wrap {
+          transition: all 0.7s;
+          transition-delay: 0.2s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(1) {
+          transition: all 0.7s;
+          transition-delay: 0.9s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(2) {
+          transition: all 0.7s;
+          transition-delay: 1.2s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(3) {
+          transition: all 0.7s;
+          transition-delay: 1.5s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(4) {
+          transition: all 0.7s;
+          transition-delay: 1.8s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(5) {
+          transition: all 0.7s;
+          transition-delay: 2s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(6) {
+          transition: all 0.7s;
+          transition-delay: 2.2s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(7) {
+          transition: all 0.7s;
+          transition-delay: 2.3s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="program"] .table .table-item:nth-child(8) {
+          transition: all 0.7s;
+          transition-delay: 2.4s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="greeting"] .greeting {
+          transition: all 0.7s;
+          transition-delay: 0.7s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="greeting"] .greeting .host-img {
+          transition: all 0.7s;
+          transition-delay: 1s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="speakers"] .speakers-ctrl {
+          transition: all 0.7s;
+          transition-delay: 0.7s;
+          transform: translateY(20rem);
+          opacity: 0;
+          transform: translateY(0);
+        }
+        .sec[data-slide="speakers"] .speakers-slide {
+          transition: all 0.7s;
+          transition-delay: 0.7s;
+          transform: translateY(20rem);
+          opacity: 0;
+          transform: translateY(0) translateX(30rem);
+        }
+        .sec[data-slide="location"] .map {
+          transition: all 0.7s;
+          transition-delay: 0.3s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="location"] .location-info {
+          transition: all 0.7s;
+          transition-delay: 0.5s;
+          transform: translateY(20rem);
+          opacity: 0;
+        }
+        .sec[data-slide="location"] .location-info h2,
+        .sec[data-slide="location"] .location-info .label {
+          transition: none;
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec[data-slide="location"] .banner-wrap .banner-box .text {
+          transition: all 0.7s;
+          transition-delay: 0s;
+          transform: translateY(5rem);
+          opacity: 0;
+        }
+        .sec[data-slide="location"] .banner-wrap .banner-box .banner-btn {
+          transition: all 0.7s;
+          transition-delay: 0.3s;
+          transform: translateY(5rem);
+          opacity: 0;
+        }
+        .sec.active .label {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active h2 {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="overview"] p {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="overview"].page-ani-scroll .theme-wrap {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="overview"].page-ani-scroll .btn-wrap {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="program"] .table .table-item:nth-child(1),
+        .sec.active[data-slide="program"] .table .table-item:nth-child(2),
+        .sec.active[data-slide="program"] .table .table-item:nth-child(3),
+        .sec.active[data-slide="program"] .table .table-item:nth-child(4),
+        .sec.active[data-slide="program"] .table .table-item:nth-child(5),
+        .sec.active[data-slide="program"] .table .table-item:nth-child(6),
+        .sec.active[data-slide="program"] .table .table-item:nth-child(7),
+        .sec.active[data-slide="program"] .table .table-item:nth-child(8) {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="greeting"] .greeting {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="greeting"] .greeting .host-img {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="speakers"] .speakers-ctrl {
+          opacity: 1;
+        }
+        .sec.active[data-slide="speakers"] .speakers-slide {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="location"] .map {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="location"] .location-info {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .sec.active[data-slide="location"]
+          .banner-wrap
+          .banner-box.active
+          .text,
+        .sec.active[data-slide="location"]
+          .banner-wrap
+          .banner-box.active
+          .banner-btn {
+          transform: translateY(0);
+          opacity: 1;
+        }
+
+        @media all and (max-width: 1600px) {
+          html,
+          body {
+            font-size: 9.5px;
+          }
+          .sec[data-slide="overview"] .theme-wrap {
+            max-width: 96%;
+            margin-left: 4%;
+            margin-right: 0;
+          }
+          .sec[data-slide="overview"] .theme-wrap .swiper {
+            padding-right: 4%;
+          }
+          html[lang="en"] .sec[data-slide="greeting"] .greeting {
+            padding-right: 50rem;
+          }
+        }
+        @media all and (max-width: 1200px) {
+          html,
+          body {
+            font-size: 8px;
+          }
+          .header .gnb {
+            display: none;
+          }
+          .sec[data-slide="location"] .map,
+          .sec[data-slide="location"] .location-info {
+            height: 71rem;
+          }
+          .sec[data-slide="location"] .location-info {
+            padding: 4rem 6rem 3rem;
+          }
+        }
+        @media all and (max-width: 1000px) {
+          .sec[data-slide="visual"] .visual-pattern {
+            zoom: 0.7;
+          }
+          .sec[data-slide="location"] .wrap {
+            flex-direction: column;
+          }
+          .sec[data-slide="location"] .map {
+            order: 2;
+            transition-delay: 1s;
+          }
+          .sec[data-slide="location"] .location-info {
+            transition-delay: 0.3s;
+            order: 1;
+          }
+          .sec[data-slide="location"]
+            .location-info
+            .location-box
+            .location-item
+            .con {
+            font-size: 2rem;
+          }
+          .sec[data-slide="location"] .banner-box {
+            padding-left: 4rem;
+            padding-right: 4rem;
+            word-break: keep-all;
+          }
+          .sec[data-slide="location"] .banner-box .text {
+            font-size: 3.2rem;
+          }
+          .sec[data-slide="program"] .table .table-item .speaker {
+            min-width: 27rem;
+            max-width: 27rem;
+          }
+          .sec[data-slide="greeting"] .greeting .host-img {
+            transform: scale(0.8);
+            transform-origin: bottom right;
+          }
+          html[lang="en"] .sec[data-slide="greeting"] .greeting {
+            padding-right: 35rem;
+          }
+          html[lang="en"] .sec[data-slide="location"] .map,
+          html[lang="en"] .sec[data-slide="location"] .location-info {
+            min-height: 74rem;
+          }
+          html[lang="en"] .sec[data-slide="location"] .banner-box {
+            padding-left: 4%;
+            padding-right: 4%;
+          }
+        }
+        @media all and (max-width: 800px) {
+          html,
+          body {
+            font-size: 6px;
+          }
+          .header {
+            height: 60px;
+          }
+          .header .language .lang-btn {
+            gap: 4px;
+            font-size: 14px;
+          }
+          .header .language .lang-item {
+            font-size: 14px;
+          }
+          .sec[data-slide="program"] .wrap {
+            padding-top: 4rem;
+          }
+          .sec[data-slide="location"] {
+            padding-top: 4rem;
+          }
+          .sec[data-slide="location"] .wrap {
+            padding-bottom: 6rem;
+          }
+          .sec[data-slide="location"] .location-info {
+            padding: 0;
+            background: none;
+            color: #fff;
+          }
+          .sec[data-slide="location"] .location-info::after {
+            display: none;
+          }
+          .sec[data-slide="location"] .location-info .label {
+            border-color: #fff;
+            color: #fff;
+          }
+          .sec[data-slide="location"] .location-info h2 {
+            color: #d6d6d6;
+          }
+          .sec[data-slide="location"] .location-info .location-box {
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+          .sec[data-slide="location"] .location-info .location-box::before {
+            background-color: #fff;
+          }
+          .sec[data-slide="location"] .location-info .location-box h3 {
+            font-size: 3.2rem;
+          }
+          .sec[data-slide="location"]
+            .location-info
+            .location-box
+            .location-list {
+            gap: 2rem;
+          }
+          .sec[data-slide="location"]
+            .location-info
+            .location-box
+            .location-item {
+            flex-direction: column;
+            gap: 2px;
+          }
+          .sec[data-slide="location"]
+            .location-info
+            .location-box
+            .location-item
+            .title,
+          .sec[data-slide="location"]
+            .location-info
+            .location-box
+            .location-item
+            .con {
+            font-size: 14px;
+          }
+        }
+        @media all and (max-width: 600px) {
+          .sec[data-slide="overview"] .page-wrap p {
+            height: 54rem;
+          }
+          .sec[data-slide="program"] .table .table-list {
+            gap: 8px;
+          }
+          .sec[data-slide="program"] .table .table-item {
+            flex-wrap: wrap;
+            gap: 0;
+            border-radius: 1.6rem;
+            overflow: hidden;
+          }
+          .sec[data-slide="program"] .table .table-item .time,
+          .sec[data-slide="program"] .table .table-item .during,
+          .sec[data-slide="program"] .table .table-item .introduce,
+          .sec[data-slide="program"] .table .table-item .speaker {
+            min-width: 0;
+            max-width: none;
+          }
+          .sec[data-slide="program"] .table .table-item .time {
+            width: 20rem;
+          }
+          .sec[data-slide="program"] .table .table-item .during {
+            width: calc(100% - 20rem);
+            justify-content: flex-start;
+            position: relative;
+          }
+          .sec[data-slide="program"] .table .table-item .during::before {
+            display: block;
+            position: absolute;
+            left: -0.3rem;
+            top: calc(50% - 1rem);
+            width: 1px;
+            height: 1.6rem;
+            background-color: var(--color-black);
+            content: "";
+          }
+          .sec[data-slide="program"] .table .table-item .introduce {
+            display: block;
+            width: 100%;
+            margin-top: 2px;
+          }
+          .sec[data-slide="program"] .table .table-item .introduce .badges {
+            margin-bottom: 6px;
+          }
+          .sec[data-slide="program"]
+            .table
+            .table-item
+            .introduce
+            .badges
+            .badge {
+            font-size: 12px;
+          }
+          .sec[data-slide="program"]
+            .table
+            .table-item
+            .introduce
+            .badges
+            .hidden-badges {
+            display: inline-flex;
+            gap: 2px;
+          }
+          .sec[data-slide="program"] .table .table-item .speaker {
+            display: none;
+          }
+          .sec[data-slide="greeting"] {
+            padding-bottom: 52rem;
+          }
+          .sec[data-slide="greeting"] .greeting .host-img {
+            top: calc(100% - 12rem);
+            transform: scale(1);
+            bottom: auto;
+          }
+          .modal-box .modal .modal-wrap {
+            flex-direction: column;
+            padding: 4rem 6rem 0 3rem;
+          }
+          .modal-box .modal .con-wrap {
+            padding-top: 6rem;
+            display: flex;
+            flex-direction: column;
+          }
+          .modal-box .modal .con-wrap .title {
+            padding-right: 20rem;
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+          }
+          .modal-box .modal .con-wrap .con {
+            flex: 1;
+          }
+          .modal-box .modal .photo {
+            position: absolute;
+            right: 7rem;
+            min-height: 19rem;
+            top: 7rem;
+          }
+          html[lang="en"] .sec[data-slide="greeting"] .greeting {
+            padding-right: 5rem;
+          }
+        }
+        @media all and (max-width: 480px) {
+          .sec[data-slide="visual"] .slogan h3 {
+            width: 100%;
+          }
+        }
+      </style>
+    </head>
+  </head>
+  <body>
+    <div class="body-bg"></div>
+    <div id="wrapper">
+      <header class="header" id="header">
+        <div class="header-wrap">
+          <div class="logos">
+            <h1 class="logo">
+              <a href="/" class="logo-anchor">
+                <img
+                  src="./images/logo.svg"
+                  alt="APEC CEO SUMMIT KOREA 2025 로고"
+                />
+              </a>
+            </h1>
+            <h1 class="logo">
+              <a href="/" class="logo-anchor">
+                <img src="./images/logo2.svg" alt="APEC 2025 KOREA 로고" />
+              </a>
+            </h1>
+          </div>
+          <div class="gnb">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <button
+                  type="button"
+                  data-anchor="overview"
+                  class="menu-anchor"
+                >
+                  <span>OVERVIEW</span>
+                </button>
+              </li>
+              <li class="menu-item">
+                <button type="button" data-anchor="program" class="menu-anchor">
+                  <span>PROGRAM</span>
+                </button>
+              </li>
+              <li class="menu-item">
+                <button type="button" data-anchor="keynote" class="menu-anchor">
+                  <span>KEYNOTE</span>
+                </button>
+              </li>
+              <li class="menu-item">
+                <button
+                  type="button"
+                  data-anchor="location"
+                  class="menu-anchor"
+                >
+                  <span>LOCATION</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="language-box">
+            <div class="language">
+              <button type="button" class="lang-btn">EN</button>
+              <div class="lang-list">
+                <a href="/" class="lang-item kr"><span>KR</span></a>
+                <a href="./en.html" class="lang-item en"><span>EN</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Swiper -->
+      <!-- <div class="swiper visual-slide"> -->
+      <!-- <div class="swiper-wrapper"> -->
+      <!-- section1 - visual -->
+      <section class="sec" data-slide="visual">
+        <div class="section-wrap">
+          <article class="wrap">
+            <h2 class="visual-logo">
+              <img src="./images/section1/top-logo.svg" alt="" />
+            </h2>
+            <div class="slogan">
+              <div class="top-text">2025 APEC CEO SUMMIT,</div>
+              <h3>
+                Future Tech Forum Series:
+                <img src="./images/section1/ai.png" alt="ai" class="ai" />
+              </h3>
+            </div>
+            <div class="visual-info">
+              <div class="time">2025. 10. 28 14:00 - 16:00</div>
+              <div class="visual-info-wrap">
+                <div class="info-item location">
+                  Munmu Hall, Gyeongju Expo Grand Park, Korea
+                </div>
+                <div class="info-item company">Organizer SK</div>
+              </div>
+            </div>
+          </article>
+          <div class="visual-pattern"></div>
+        </div>
+      </section>
+
+      <!-- section2 - overview -->
+      <section class="sec" data-slide="overview">
+        <div class="page-box">
+          <article class="page page1">
+            <div class="page-wrap">
+              <span class="label">Overview</span>
+              <h2>2025 APEC CEO SUMMIT,<br />Future Tech Forum Series: AI</h2>
+              <p>
+                The Future Tech Forum AI Session is a special program held in
+                conjunction with the APEC CEO Summit, bringing together global
+                AI industry leaders, AI scholars, and senior government
+                officials to engage in in-depth discussions on the latest AI
+                technologies, trends, and key issues.
+              </p>
+            </div>
+          </article>
+          <article class="page page2">
+            <div class="page-wrap">
+              <span class="label">Overview</span>
+              <h2>2025 APEC CEO SUMMIT,<br />Future Tech Forum Series: AI</h2>
+              <p>
+                This session is a networking platform connecting public and
+                private sectors in global AI policy and industry, giving
+                participants the chance to experience and exchange insights on
+                global AI discourse.<br />&nbsp;
+              </p>
+            </div>
+            <div class="theme-wrap">
+              <div class="swiper overview-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" data-slide="theme">
+                    <h3 class="title">
+                      <span class="text">THEME</span>
+                    </h3>
+                    <div class="con">
+                      <div class="text">
+                        Exploring AI era challenges and opportunities, national
+                        strategies and industrial solutions
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-slide="program">
+                    <h3 class="title">
+                      <span class="text">PROGRAM</span>
+                    </h3>
+                    <div class="con">
+                      <div class="text">
+                        Keynotes and discussions with technology innovators and
+                        policy leaders
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-slide="benefits">
+                    <h3 class="title">
+                      <span class="text">KEY BENEFIT</span>
+                    </h3>
+                    <div class="con">
+                      <div class="text">
+                        Exchanging future AI insights with global leaders
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <a
+                href="https://apecfuturetechforum.kr/registration.cm"
+                target="_blank"
+                class="btn"
+              >
+                <span class="sub-text">Future Tech Forum AI Session</span>
+                <span class="main-text">Registration</span>
+              </a>
+            </div>
+
+            <div class="bg"></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- section3 - schedule -->
+      <section class="sec" data-slide="program">
+        <div class="wrap">
+          <span class="label dark">PROGRAM</span>
+          <h2>our program's process</h2>
+          <article class="table">
+            <ul class="table-list">
+              <li class="table-item">
+                <div class="time">14:00 - 14:05</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-green">Opening</span>
+                    <div class="hidden-badges">
+                      <span class="badge">MC (Professional Announcer)</span>
+                    </div>
+                  </div>
+                  <div class="con">
+                    Introduction of the Event and Key Guests, and Program
+                    Schedule Announcement
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">MC (Professional Announcer)</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="table-item">
+                <div class="time">14:00 - 14:05</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-green2">Welcoming Remarks</span>
+                    <div class="hidden-badges">
+                      <span class="badge">National AI Advisor</span>
+                    </div>
+                  </div>
+                  <div class="con">Vision for AI G3 Advancement</div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">National AI Advisor</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="table-item">
+                <div class="time">14:10 - 14:15</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-yellow">Keynote Speech</span>
+                    <div class="hidden-badges">
+                      <span class="badge">Chairman, SK Group</span>
+                    </div>
+                  </div>
+                  <div class="con">
+                    Building the AI Ecosystem: Korea’s Experience and a Balanced
+                    Model for APEC
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">Chairman, SK Group</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="table-item">
+                <div class="time">14:15 - 14:30</div>
+                <div class="during">15’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-red">Topic Presentation</span>
+                    <div class="hidden-badges">
+                      <span class="badge">Jason Kwon, CSO, OpenAI</span>
+                    </div>
+                  </div>
+                  <div class="con">
+                    OpenAI for Korea: Market Significance and Ecosystem
+                    Development Plans
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">Jason Kwon, CSO, OpenAI</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="table-item">
+                <div class="time">14:30 - 14:45</div>
+                <div class="during">15’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-red">Topic Presentation</span>
+                    <div class="hidden-badges">
+                      <span class="badge">NAVER CEO</span>
+                    </div>
+                  </div>
+                  <div class="con">
+                    Developing a Korean-Style Full-Stack AI: Industrial
+                    Applications and Key Lessons
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">NAVER CEO</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="table-item">
+                <div class="time">14:45 - 15:15</div>
+                <div class="during">30’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-purple">1:1 Dialogue</span>
+                    <div class="hidden-badges">
+                      <span class="badge">AWS CEO x Deloitte</span>
+                    </div>
+                  </div>
+                  <div class="con">Engine for AI Innovation: AI Infra</div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">AWS CEO x Deloitte</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="table-item">
+                <div class="time">15:15 - 15:55</div>
+                <div class="during">40’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-purple">Panel Discussion</span>
+                    <div class="hidden-badges">
+                      <span class="badge">National AI Advisor AWS</span>
+                      <span class="badge">NAVER</span>
+                      <span class="badge">Stanford</span>
+                      <span class="badge">Deloitte (Moderator)</span>
+                    </div>
+                  </div>
+                  <div class="con">
+                    Innovation, Ethics, and Growth: Striking a Balance in the
+                    APEC AI Ecosystem
+                  </div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">National AI Advisor AWS</span>
+                    <span class="badge">NAVER</span>
+                    <span class="badge">Stanford</span>
+                    <span class="badge">Deloitte (Moderator)</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="table-item">
+                <div class="time">15:55 - 16:00</div>
+                <div class="during">05’</div>
+                <div class="introduce">
+                  <div class="badges">
+                    <span class="badge bg-green2">Closing</span>
+                    <div class="hidden-badges">
+                      <span class="badge">MC (Professional Announcer)</span>
+                    </div>
+                  </div>
+                  <div class="con">Closing Remarks</div>
+                </div>
+                <div class="speaker">
+                  <div class="badges">
+                    <span class="badge">MC (Professional Announcer)</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- section4 - greeting -->
+      <section class="sec" data-slide="greeting">
+        <div class="wrap">
+          <span class="label dark">Host Greeting</span>
+          <h2>Chey Tae-won</h2>
+          <article class="greeting">
+            <p>
+              It is my great pleasure to welcome you to the Future Tech Forum –
+              AI, a special program of the APEC CEO Summit Korea 2025.
+            </p>
+            <p>
+              This Forum will focus on building Korea’s AI ecosystem and provide
+              a platform where global technology leaders, distinguished
+              scholars, and government officials come together to exchange ideas
+              on the future of AI. By sharing insights and visions, we aim to
+              foster collaboration that bridges local innovation with global
+              opportunities.
+            </p>
+            <p>
+              Through these discussions, we hope to explore how AI can empower
+              industries, create new value for society, and contribute to
+              sustainable growth across the Asia-Pacific region.
+            </p>
+            <p>
+              I look forward to your active participation in shaping this
+              meaningful dialogue on AI.
+            </p>
+            <div class="host-name">
+              <span>Chey Tae-won </span>
+              <span>Chairman, SK Group</span>
+            </div>
+            <div class="host-img">
+              <img src="./images/section4/host.png" alt="최대원 SK 회장" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- section5 - speakers -->
+      <section class="sec" data-slide="speakers">
+        <div class="wrap">
+          <span class="label dark">Keynote</span>
+          <h2>
+            Meet Keynote<br />
+            Speakers :
+          </h2>
+
+          <div class="speakers-ctrl">
+            <button type="button" class="slide-prev"></button>
+            <button type="button" class="slide-next"></button>
+          </div>
+          <article class="slide-box">
+            <div class="swiper speakers-slide">
+              <div class="swiper-wrapper">
+                <section class="swiper-slide" data-slide="0">
+                  <button type="button" data-modal="0" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-green">Welcoming Remarks</span>
+                      <h3>Jung Woo Ha</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">Position (Job Title)</span>
+                        Company/Organization
+                      </h4>
+                    </div>
+                    <div class="img">
+                      <img src="./images/section5/ha-j.png" alt="Jung Woo Ha" />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide special" data-slide="1">
+                  <button type="button" data-modal="1" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">Keynote Speaker</span>
+                      <h3>Tae Won Chey</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">TM</span>
+                        SK Group
+                      </h4>
+                    </div>
+                    <div class="img">
+                      <img
+                        src="./images/section5/choi-t.png"
+                        alt="Tae Won Chey"
+                      />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide" data-slide="2">
+                  <button type="button" data-modal="2" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-red">Topic Presentation</span>
+                      <h3>Jason Kwon</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">CSO</span>
+                        OpenAI Korea
+                      </h4>
+                    </div>
+                    <div class="img">
+                      <img
+                        src="./images/section5/kwon-j.png"
+                        alt="Jason Kwon"
+                      />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide" data-slide="3">
+                  <button type="button" data-modal="3" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-red">Topic Presentation</span>
+                      <h3>Soo Yeon Choi</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">CEO</span>
+                        NAVER
+                      </h4>
+                    </div>
+
+                    <div class="img">
+                      <img
+                        src="./images/section5/choi-s.png"
+                        alt="Soo Yeon Choi"
+                      />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide" data-slide="4">
+                  <button type="button" data-modal="4" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-purple">Fireside Chat</span>
+                      <h3>Matt Garman</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">CEO</span>
+                        AWS
+                      </h4>
+                    </div>
+
+                    <div class="img">
+                      <img
+                        src="./images/section5/garman-m.png"
+                        alt="Matt Garman"
+                      />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide" data-slide="5">
+                  <button type="button" data-modal="5" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-purple">Moderator</span>
+                      <h3>Nitin Mittal</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">Global AI Leader</span>
+                        Deloitte LLP
+                      </h4>
+                    </div>
+
+                    <div class="img">
+                      <img
+                        src="./images/section5/mittal-n.png"
+                        alt="Nitin Mittal"
+                      />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide" data-slide="6">
+                  <button type="button" data-modal="6" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">Panel Discussion</span>
+                      <h3>Young Sang Yoo</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">CEO</span>
+                        SK Telecom
+                      </h4>
+                    </div>
+
+                    <div class="img">
+                      <img
+                        src="./images/section5/you-y.png"
+                        alt="Young Sang Yoo"
+                      />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide" data-slide="7">
+                  <button type="button" data-modal="7" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">Panel Discussion</span>
+                      <h3>Ye Jin Choi</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">AI Scholar </span>
+                        Professor, Stanford University
+                      </h4>
+                    </div>
+
+                    <div class="img">
+                      <img
+                        src="./images/section5/choi-y.png"
+                        alt="Ye Jin Choi"
+                      />
+                    </div>
+                  </button>
+                </section>
+
+                <section class="swiper-slide empty" data-slide="7">
+                  <button type="button" data-modal="8" class="slide-wrap">
+                    <div class="badge-wrap">
+                      <span class="badge bg-yellow">Panel Discussion</span>
+                      <h3>Coming Soon</h3>
+                    </div>
+                    <div class="title">
+                      <h4>
+                        <span class="sub-title">Coming Soon</span>
+                        Company/Organization
+                      </h4>
+                    </div>
+
+                    <div class="img">To Be <br />Announced</div>
+                  </button>
+                </section>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- section6 - location -->
+      <section class="sec" data-slide="location">
+        <div class="wrap">
+          <article class="map">
+            <img src="./images/section6/map.png" alt="장소" />
+          </article>
+          <article class="location-info">
+            <span class="label">Location</span>
+            <h2>Gyeongju <br />Expo Park</h2>
+            <div class="sub-title">Gyeongju Expo Grand Park</div>
+            <div class="location-box">
+              <h3>Venue Guide</h3>
+              <ul class="location-list">
+                <li class="location-item">
+                  <span class="title">1F Munmu Hall</span>
+                  <span class="con"
+                    >In-depth policy and agenda discussions among global AI
+                    leaders led by private companies</span
+                  >
+                </li>
+                <li class="location-item">
+                  <span class="title">Directions</span>
+                  <span class="con"
+                    >614 Gyeonggam-ro, Gyeongju-si, Gyeongbuk</span
+                  >
+                </li>
+                <li class="location-item">
+                  <span class="title">Parking</span>
+                  <span class="con"
+                    >The west parking lot has limited capacity. <br />Please use
+                    the east parking lot.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+          <svg
+            style="position: absolute; width: 0; height: 0"
+            class="bg-filter"
+          >
+            <filter id="monoNoise">
+              <!-- fractal noise 패턴 생성 -->
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="1.2"
+                numOctaves="1"
+                seed="1"
+                stitchTiles="stitch"
+                result="noise"
+              />
+              <!-- 무채색 변환 -->
+              <feColorMatrix
+                type="saturate"
+                values="0"
+                in="noise"
+                result="mono"
+              />
+              <!-- 밝기/투명도 조절 -->
+              <feComponentTransfer>
+                <feFuncR type="linear" slope="0.05" />
+                <feFuncG type="linear" slope="0.05" />
+                <feFuncB type="linear" slope="0.05" />
+              </feComponentTransfer>
+            </filter>
+          </svg>
+        </div>
+
+        <div class="banner-wrap">
+          <article class="banner-box">
+            <div class="text">
+              Construction of the “APEC Exhibition Hall,” showcasing advanced
+              technology and Korean Wave culture, at Gyeongju Expo Grand Park
+            </div>
+            <a
+              href="https://www.gjfocus.co.kr/news/articleView.html?idxno=21389"
+              target="_blank"
+              class="banner-btn"
+              >Gyeongju Focus</a
+            >
+          </article>
+        </div>
+      </section>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="wrap">
+        <div class="footer-left">
+          <img src="./images/footer/logo.svg" alt="sk" />
+          <div class="text">
+            <span>secretariat</span>
+            <span>skaisummit2025@gmail.com</span>
+          </div>
+        </div>
+        <div class="footer-right">© By SK Telecom All rights reserved.</div>
+      </div>
+    </footer>
+
+    <div class="modal-box" data-modal="0">
+      <button type="button" class="close">닫기</button>
+      <div class="modal">
+        <div class="con-wrap">
+          <div class="title">
+            <h2></h2>
+            <div class="role"></div>
+            <div class="company"></div>
+          </div>
+          <div class="con"></div>
+        </div>
+        <div class="photo">
+          <img src="" alt="" />
+        </div>
+        <button type="button" class="close">닫기</button>
+      </div>
+    </div>
+
+    <script>
+      var modalData = [
+        {
+          id: 0,
+          speaker: {
+            name: "하정우",
+            role: "Position (Job Title)",
+            company: "Company/Organization",
+            image: "./images/section5/ha-j.png",
+          },
+          content: `12`,
+        },
+        {
+          id: 1,
+          speaker: {
+            name: "Chey Tae-won",
+            role: "회장",
+            company: "Chairman / SK Group",
+            image: "./images/section5/choi-t.png",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        It is my great pleasure to welcome you to the Future Tech Forum – AI, a special program of the APEC CEO Summit Korea 2025.
+      </p>
+
+      <p>
+        This Forum will focus on building Korea’s AI ecosystem and provide a platform where global technology leaders, distinguished scholars, and government officials come together to exchange ideas on the future of AI. By sharing insights and visions, we aim to foster collaboration that bridges local innovation with global opportunities.
+      </p>
+
+      <p>
+        Through these discussions, we hope to explore how AI can empower industries, create new value for society, and contribute to sustainable growth across the Asia-Pacific region.
+      </p>
+
+      <p>
+        I look forward to your active participation in shaping this meaningful dialogue on AI.
+      </p>
+    </div>`,
+        },
+        {
+          id: 2,
+          speaker: {
+            name: "Jason Kwon",
+            role: "CSO",
+            company: "OpenAI Korea",
+            image: "./images/section5/kwon-j.png",
+          },
+          content: `12`,
+        },
+        {
+          id: 3,
+          speaker: {
+            name: "Soo Yeon Choi",
+            role: "CEO",
+            company: "CEO / NAVER Corporation",
+            image: "./images/section5/choi-s.png",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        Soo Yeon Choi is the Chief Executive Officer of NAVER Corporation, the
+        largest internet company in Korea that operates the country’s No.1
+        search engine, NAVER.
+      </p>
+      <p>
+        Since her appointment as CEO in 2022, she has led the global expansion
+        of “Team NAVER” and steered the company’s transformation into a
+        technology-centered organization. She has established full-stack AI
+        execution capabilities—ranging from cloud infrastructure advancement and
+        the development of NAVER’s proprietary large language model “HyperCLOVA
+        X” to the application of AI technologies across search, commerce,
+        content, and fintech services—delivering differentiated user experiences
+        and spearheading business innovation.
+      </p>
+      <p>
+        Ms. Choi has also been a key advocate for the safe and responsible
+        development of AI. In 2024, she introduced the “NAVER AI Safety
+        Framework” and shared NAVER’s research at global forums including the AI
+        Safety Summit and the United Nations in Geneva, contributing to the
+        creation of a safer global AI ecosystem.
+      </p>
+      <p>
+        In recognition of her strategic leadership and achievements, she was
+        named one of Forbes Asia’s Power Businesswomen (2022), one of Forbes’
+        World’s 100 Most Powerful Women (2023 and 2024), and ranked 32nd on
+        Fortune’s Most Powerful Women list (2025). Ms. Choi was also appointed
+        as a board member of the United Nations Global Compact (UNGC) in 2025.
+      </p>
+      <p>
+        Ms. Choi began her career at NHN (now NAVER) in 2005, worked as a
+        corporate lawyer at Yulchon LLC from 2012 to 2019, and returned to NAVER
+        in 2019 to lead the Global Business Support division before being
+        appointed CEO in 2022. She holds dual bachelor’s degrees in Civil and
+        Environmental Systems Engineering and Communication from Seoul National
+        University, a Juris Doctor (J.D.) from Yonsei University Law School, and
+        a Master of Laws (LL.M.) from Harvard Law School.
+      </p>
+    </div>`,
+        },
+        {
+          id: 4,
+          speaker: {
+            name: "Matt Garman",
+            role: "CEO",
+            company: "AWS",
+            image: "./images/section5/garman-m.png",
+          },
+          content: `  
+    
+    <div class="con-inner">
+      <p>
+        Matt Garman is the CEO of Amazon Web Services (AWS), the world's most
+        comprehensive and broadly adopted cloud. Since joining AWS in 2006,
+        Garman has been an integral part of AWS, having built and launched many
+        of the company's foundational pioneering cloud services. Matt was
+        instrumental in scaling AWS from a startup into its current $100 billion
+        run rate, and most recently served as Senior Vice President, AWS Sales,
+        Marketing, and Global Services.
+      </p>
+    </div>`,
+        },
+        {
+          id: 5,
+          speaker: {
+            name: "Nitin Mittal",
+            role: "Global AI Leader",
+            company: "Deloitte LLP",
+            image: "./images/section5/mittal-n.png",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        Nitin is a Deloitte Principal leading Deloitte’s Global AI program. He
+        advises organizations on the applications of AI and the implications of
+        emerging technologies on the strategy and competitive positioning of
+        businesses. Throughout his career, he has served as a trusted advisor to
+        global enterprises and worked across a number of industries and markets.
+      </p>
+      <p>
+        At Deloitte, Nitin is responsible for shaping the AI market and creating
+        new business opportunities by harnessing emerging technologies. He is
+        also leading Deloitte's own effort to be a global AI-fueled organization
+        and transform how it delivers professional services.
+      </p>
+    </div>`,
+        },
+        {
+          id: 6,
+          speaker: {
+            name: "James Ryu",
+            role: "CEO",
+            company: "SK Telecom",
+            image: "./images/section5/you-y.png",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        James (Young-sang) Ryu has served as President and CEO of SK Telecom
+        since November 2021, leading SKT’s transformation into a global AI
+        company. He initiated the AI Pyramid 2.0 strategy, SK Telecom’s growth
+        framework spanning AI infrastructure, enterprise solutions, and consumer
+        services, and is executing it by strengthening in-house expertise and
+        building global partnerships to accelerate AI-driven innovation. Beyond
+        SK Telecom, he chairs the ICT Committee at the SK SUPEX Council and
+        heads the Office of AI Innovation at SK Group, aligning group-wide AI
+        capabilities with ecosystem growth.
+      </p>
+      <p>
+        Previously, he oversaw the launch of the world’s first commercial 5G
+        service as head of SK Telecom’s Mobile Network Business. Earlier in his
+        career, he held leadership roles across SK affiliates, contributing to
+        landmark investments such as SK Hynix and Toshiba’s semiconductor
+        business.
+      </p>
+      <p>
+        James holds an MBA from the University of Washington, and master’s and
+        bachelor’s degrees in industrial engineering from Seoul National
+        University.
+      </p>
+    </div>`,
+        },
+        {
+          id: 7,
+          speaker: {
+            name: "Yejin Choi",
+            role: "Dieter Schwarz Foundation Professor of Computer Science and Senior Fellow",
+            company:
+              "Stanford Institute for Human-Centered Artificial Intelligence",
+            image: "./images/section5/choi-y.png",
+          },
+          content: `
+    <div class="con-inner">
+      <p>
+        Yejin Choi is the Dieter Schwarz Foundation Professor and Senior Fellow
+        at the Department of Computer Science at Stanford University and the
+        Stanford Institute for Human-Centered Artificial Intelligence (HAI)
+        respectively. She was previously Professor at UW and Senior Director at
+        AI2. Choi is MacArthur Fellow (class of 2022), AI2050 Senior Fellow
+        (class of 2024), and named among Time100 Most Influential People in AI
+        in 2023.
+      </p>
+      <p>
+        In addition, Choi is a co-recipient of 2 Test-of-Time awards and 8 Best
+        and Outstanding Paper Awards at top AI conferences including ACL, ICML,
+        NeurIPS, ICCV, CVPR, and AAAI, the Borg Early Career Award (BECA) in
+        2018, the inaugural Alexa Prize Challenge in 2017, and IEEE AI’s 10 to
+        Watch in 2016. Choi was a main stage speaker at TED 2023, and a keynote
+        speaker for a dozen conferences across several AI disciplines including
+        ACL, CVPR, ICLR, MLSys, VLDB, WebConf, and AAAI
+      </p>
+      <p>
+        Her current research interests include fundamental limits and
+        capabilities of large language models, alternative training recipes for
+        language models, symbolic methods for neural networks, reasoning and
+        knowledge discovery, moral norms and values, pluralistic alignment, and
+        AI safety.
+      </p>
+    </div>`,
+        },
+      ];
+    </script>
+
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
