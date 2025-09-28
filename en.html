@@ -38,42 +38,58 @@
             </h1>
           </div>
           <div class="gnb">
-            <ul class="menu-list">
-              <li class="menu-item">
-                <button
-                  type="button"
-                  data-anchor="overview"
-                  class="menu-anchor"
-                >
-                  <span>OVERVIEW</span>
-                </button>
-              </li>
-              <li class="menu-item">
-                <button type="button" data-anchor="program" class="menu-anchor">
-                  <span>PROGRAM</span>
-                </button>
-              </li>
-              <li class="menu-item">
-                <button type="button" data-anchor="keynote" class="menu-anchor">
-                  <span>KEYNOTE</span>
-                </button>
-              </li>
-              <li class="menu-item">
-                <button
-                  type="button"
-                  data-anchor="location"
-                  class="menu-anchor"
-                >
-                  <span>LOCATION</span>
-                </button>
-              </li>
-            </ul>
+            <button type="button" class="menu-btn"></button>
+            <div class="menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <button
+                    type="button"
+                    data-anchor="overview"
+                    class="menu-anchor"
+                  >
+                    <span>OVERVIEW</span>
+                  </button>
+                </li>
+                <li class="menu-item">
+                  <button
+                    type="button"
+                    data-anchor="program"
+                    class="menu-anchor"
+                  >
+                    <span>PROGRAM</span>
+                  </button>
+                </li>
+                <li class="menu-item">
+                  <button
+                    type="button"
+                    data-anchor="keynote"
+                    class="menu-anchor"
+                  >
+                    <span>KEYNOTE</span>
+                  </button>
+                </li>
+                <li class="menu-item">
+                  <button
+                    type="button"
+                    data-anchor="location"
+                    class="menu-anchor"
+                  >
+                    <span>LOCATION</span>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="lang-list">
+                <a href="./" class="lang-item kr"><span>KR</span></a>
+                <a href="./en.html" class="lang-item en"><span>EN</span></a>
+              </div>
+            </div>
           </div>
           <div class="language-box">
             <div class="language">
-              <button type="button" class="lang-btn">EN</button>
+              <button type="button" class="lang-btn">KR</button>
               <div class="lang-list">
-                <a href="/" class="lang-item kr"><span>KR</span></a>
+                <a href="./" class="lang-item kr"><span>KR</span></a>
                 <a href="./en.html" class="lang-item en"><span>EN</span></a>
               </div>
             </div>
@@ -721,30 +737,22 @@
     <div class="modal-box" data-modal="0">
       <button type="button" class="close">닫기</button>
       <div class="modal">
-        <div class="con-wrap">
-          <div class="title">
-            <h2></h2>
-            <div class="role"></div>
-            <div class="company"></div>
+        <div class="modal-wrap">
+          <div class="con-wrap">
+            <div class="title">
+              <h2></h2>
+              <div class="role"></div>
+              <div class="company"></div>
+            </div>
+            <div class="con"></div>
           </div>
-          <div class="con"></div>
-        </div>
-        <div class="photo">
-          <img src="" alt="" />
+          <div class="photo">
+            <img src="" alt="" />
+          </div>
         </div>
         <button type="button" class="close">닫기</button>
       </div>
     </div>
-
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
 
     <script>
       var modalData = [
