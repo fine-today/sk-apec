@@ -207,7 +207,7 @@ html.modal-active {
     justify-content: center;
     text-align: center;
     font-family: "DM-serif";
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 1.08;
     border: 2px solid var(--color-black2);
     color: var(--color-black2);
@@ -223,7 +223,7 @@ html.modal-active {
   }
   h2 {
     font-family: "DM-serif";
-    font-size: 8rem;
+    font-size: 6.4rem;
     line-height: 1.1;
     font-weight: 400;
     text-align: left;
@@ -542,10 +542,9 @@ html.modal-active {
         .swiper-slide {
           display: block;
           flex: 1;
+          height: 52.8rem;
           // width: 49.6rem;
-          br {
-            display: none;
-          }
+
           .title {
             font-family: "DM-serif";
             display: block;
@@ -657,7 +656,7 @@ html.modal-active {
       width: 1536px;
       max-width: 92%;
       margin: 0 auto;
-      padding: 18rem 0 7.3rem;
+      padding: 18rem 0 18rem;
     }
     .table {
       .table-list {
@@ -708,8 +707,8 @@ html.modal-active {
           }
         }
         .speaker {
-          min-width: 32rem;
-          max-width: 32rem;
+          min-width: 37rem;
+          max-width: 37rem;
         }
       }
     }
@@ -751,7 +750,7 @@ html.modal-active {
     overflow: hidden;
     position: relative;
     align-items: flex-end;
-    padding: 7rem 0 8.1rem;
+    padding: 14rem 0 8.1rem;
     color: rgba(255, 255, 255, 0.8);
     background-color: var(--color-bg);
     &::before {
@@ -889,6 +888,17 @@ html.modal-active {
             opacity: 1;
           }
         }
+        &[data-slide="0"],
+        &[data-slide="2"] {
+          .slide-wrap {
+            cursor: default;
+          }
+          &:hover {
+            &::after {
+              opacity: 0;
+            }
+          }
+        }
         .slide-wrap {
           display: flex;
           text-align: left;
@@ -1023,7 +1033,7 @@ html.modal-active {
       }
       .location-box {
         margin-top: 6rem;
-        padding: 6rem 4rem 4rem 4rem;
+        padding: 4rem 4rem 4rem 4rem;
         position: relative;
         &::before {
           display: block;
@@ -1052,14 +1062,14 @@ html.modal-active {
           width: 100%;
           .title {
             min-width: 8.4rem;
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 1.4;
             font-weight: 600;
           }
           .con {
             flex: 1;
             display: block;
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 1.4;
             font-weight: 400;
           }
@@ -1125,12 +1135,20 @@ html.modal-active {
     .text {
       margin-top: 3.6rem;
       display: flex;
-      gap: 12px;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
       span {
+        display: flex;
         font-weight: 700;
         line-height: 1.2;
         font-size: 1.6rem;
+        em {
+          display: block;
+          width: 88px;
+          font-style: normal;
+          margin-right: 12px;
+        }
       }
     }
   }
@@ -1171,14 +1189,16 @@ html.modal-active {
     padding-bottom: 4rem;
     width: 76rem;
     height: 72rem;
-    padding: 8rem 6.4rem 4rem 6rem;
-    overflow-y: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 8rem 0 4rem 0;
     .modal-wrap {
       display: flex;
       gap: 2.4rem;
-      max-width: 90vw;
-      max-height: 90vh;
+      height: 100%;
       position: relative;
+      padding: 0 6.4rem 0 6rem;
+      overflow-y: auto;
     }
     > .close {
       position: absolute;
@@ -1231,6 +1251,9 @@ html.modal-active {
           font-weight: 500;
           color: #121212;
           word-break: keep-all;
+          & + p {
+            margin-top: 1.5rem;
+          }
         }
       }
     }
@@ -1257,6 +1280,14 @@ html.modal-active {
 
 // 영문 별도
 html[lang="en"] {
+  .sec[data-slide="overview"] {
+    .page-wrap p {
+      height: 36rem;
+    }
+    .theme-wrap .overview-slide .swiper-slide {
+      height: 59.8rem;
+    }
+  }
   .sec[data-slide="greeting"] .greeting {
     padding-right: calc(100% - 88rem);
   }
@@ -1271,21 +1302,20 @@ html[lang="en"] {
       margin-top: 1rem;
     }
   }
-  .sec[data-slide="location"] .map {
-    min-height: 74.1rem;
-    img {
-      position: absolute;
+  .sec[data-slide="location"] {
+    .map {
+      min-height: 74.1rem;
+      img {
+        position: absolute;
+      }
     }
-  }
-  .sec[data-slide="location"] .banner-box {
-    padding-left: calc(50% - 670px);
-    padding-right: calc(50% - 670px);
-  }
-  .sec[data-slide="overview"] .theme-wrap .overview-slide .swiper-slide {
-    height: 49.8rem;
-  }
-  .sec[data-slide="overview"] .page-wrap p {
-    height: 36rem;
+    .location-info .location-box .location-item .title {
+      width: 12rem;
+    }
+    .banner-box {
+      padding-left: calc(50% - 670px);
+      padding-right: calc(50% - 670px);
+    }
   }
 }
 
@@ -1521,6 +1551,14 @@ html[lang="en"] {
     .swiper {
       padding-right: 4%;
     }
+    .overview-slide .swiper-slide {
+      height: 59.8rem;
+      .con .text {
+        br {
+          display: none;
+        }
+      }
+    }
   }
   html[lang="en"] {
     .sec[data-slide="greeting"] .greeting {
@@ -1533,8 +1571,10 @@ html[lang="en"] {
 }
 
 @media all and (max-width: 1300px) {
-  .sec[data-slide="overview"] .theme-wrap .overview-slide .swiper-slide .con {
-    height: 19rem;
+  .sec[data-slide="overview"] .theme-wrap .overview-slide .swiper-slide {
+    .con {
+      height: 19rem;
+    }
   }
 }
 
@@ -1676,8 +1716,8 @@ html[lang="en"] {
     }
   }
   .sec[data-slide="program"] .table .table-item .speaker {
-    min-width: 27rem;
-    max-width: 27rem;
+    min-width: 36rem;
+    max-width: 36rem;
   }
   .sec[data-slide="greeting"] .greeting .host-img {
     transform: scale(0.8);
@@ -1725,8 +1765,39 @@ html[lang="en"] {
       }
     }
   }
-  .sec[data-slide="program"] .wrap {
-    padding-top: 4rem;
+  .sec[data-slide="overview"] {
+    .theme-wrap .overview-slide {
+      .swiper-wrapper {
+        flex-direction: column;
+      }
+      .swiper-slide .con {
+        height: auto;
+      }
+    }
+    .btn-wrap {
+      padding-bottom: 0;
+    }
+  }
+  .sec[data-slide="program"] {
+    .wrap {
+      padding-top: 4rem;
+    }
+    .table {
+      overflow-x: auto;
+      .table-list {
+        min-width: 645px;
+        border-radius: 0;
+      }
+    }
+  }
+  [lang="en"] {
+    .sec[data-slide="program"] {
+      .table {
+        .table-list {
+          min-width: 800px;
+        }
+      }
+    }
   }
   .sec[data-slide="location"] {
     padding-top: 10rem;
@@ -1838,77 +1909,11 @@ html[lang="en"] {
       height: 34rem;
       font-size: 18px;
     }
-    .theme-wrap .overview-slide {
-      .swiper-wrapper {
-        flex-direction: column;
-      }
-      .swiper-slide .con {
-        height: auto;
-      }
-    }
   }
   .sec[data-slide="program"] {
-    .table {
-      overflow-x: auto;
-      .table-list {
-        min-width: 645px;
-        border-radius: 0;
-      }
+    .wrap {
+      padding-bottom: 4rem;
     }
-    /*  .table {
-      .table-list {
-        gap: 8px;
-      }
-      .table-item {
-        flex-wrap: wrap;
-        gap: 0;
-        border-radius: 1.6rem;
-        overflow: hidden;
-        .time,
-        .during,
-        .introduce,
-        .speaker {
-          min-width: 0;
-          max-width: none;
-        }
-        .time {
-          width: 20rem;
-        }
-        .during {
-          width: calc(100% - 20rem);
-          justify-content: flex-start;
-          position: relative;
-          &::before {
-            display: block;
-            position: absolute;
-            left: -0.3rem;
-            top: calc(50% - 1rem);
-            width: 1px;
-            height: 1.6rem;
-            background-color: var(--color-black);
-            content: "";
-          }
-        }
-        .introduce {
-          display: block;
-          width: 100%;
-          margin-top: 2px;
-          .badges {
-            margin-bottom: 6px;
-            .badge {
-              font-size: 12px;
-            }
-            .hidden-badges {
-              display: inline-flex;
-              gap: 2px;
-            }
-          }
-        }
-        .speaker {
-          display: none;
-        }
-      }
-    }*/
   }
   .sec[data-slide="greeting"] {
     padding-bottom: 0;

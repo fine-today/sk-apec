@@ -189,7 +189,7 @@ html.modal-active body {
   justify-content: center;
   text-align: center;
   font-family: "DM-serif";
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 1.08;
   border: 2px solid var(--color-black2);
   color: var(--color-black2);
@@ -205,7 +205,7 @@ html.modal-active body {
 }
 .sec h2 {
   font-family: "DM-serif";
-  font-size: 8rem;
+  font-size: 6.4rem;
   line-height: 1.1;
   font-weight: 400;
   text-align: left;
@@ -488,9 +488,7 @@ html.modal-active body {
 .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide {
   display: block;
   flex: 1;
-}
-.sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide br {
-  display: none;
+  height: 52.8rem;
 }
 .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide .title {
   font-family: "DM-serif";
@@ -592,7 +590,7 @@ html.modal-active body {
   width: 1536px;
   max-width: 92%;
   margin: 0 auto;
-  padding: 18rem 0 7.3rem;
+  padding: 18rem 0 18rem;
 }
 .sec[data-slide=program] .table .table-list {
   display: flex;
@@ -643,8 +641,8 @@ html.modal-active body {
   font-weight: 600;
 }
 .sec[data-slide=program] .table .table-item .speaker {
-  min-width: 32rem;
-  max-width: 32rem;
+  min-width: 37rem;
+  max-width: 37rem;
 }
 .sec[data-slide=program] .badges {
   display: flex;
@@ -683,7 +681,7 @@ html.modal-active body {
   overflow: hidden;
   position: relative;
   align-items: flex-end;
-  padding: 7rem 0 8.1rem;
+  padding: 14rem 0 8.1rem;
   color: rgba(255, 255, 255, 0.8);
   background-color: var(--color-bg);
 }
@@ -814,6 +812,12 @@ html.modal-active body {
 .sec[data-slide=speakers] .speakers-slide .swiper-slide:hover::after {
   opacity: 1;
 }
+.sec[data-slide=speakers] .speakers-slide .swiper-slide[data-slide="0"] .slide-wrap, .sec[data-slide=speakers] .speakers-slide .swiper-slide[data-slide="2"] .slide-wrap {
+  cursor: default;
+}
+.sec[data-slide=speakers] .speakers-slide .swiper-slide[data-slide="0"]:hover::after, .sec[data-slide=speakers] .speakers-slide .swiper-slide[data-slide="2"]:hover::after {
+  opacity: 0;
+}
 .sec[data-slide=speakers] .speakers-slide .swiper-slide .slide-wrap {
   display: flex;
   text-align: left;
@@ -939,7 +943,7 @@ html.modal-active body {
 }
 .sec[data-slide=location] .location-info .location-box {
   margin-top: 6rem;
-  padding: 6rem 4rem 4rem 4rem;
+  padding: 4rem 4rem 4rem 4rem;
   position: relative;
 }
 .sec[data-slide=location] .location-info .location-box::before {
@@ -970,14 +974,14 @@ html.modal-active body {
 }
 .sec[data-slide=location] .location-info .location-box .location-item .title {
   min-width: 8.4rem;
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.4;
   font-weight: 600;
 }
 .sec[data-slide=location] .location-info .location-box .location-item .con {
   flex: 1;
   display: block;
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.4;
   font-weight: 400;
 }
@@ -1038,13 +1042,21 @@ html.modal-active body {
 .footer .footer-left .text {
   margin-top: 3.6rem;
   display: flex;
-  gap: 12px;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
 }
 .footer .footer-left .text span {
+  display: flex;
   font-weight: 700;
   line-height: 1.2;
   font-size: 1.6rem;
+}
+.footer .footer-left .text span em {
+  display: block;
+  width: 88px;
+  font-style: normal;
+  margin-right: 12px;
 }
 .footer .footer-right {
   font-weight: 700;
@@ -1083,15 +1095,17 @@ html.modal-active body {
   padding-bottom: 4rem;
   width: 76rem;
   height: 72rem;
-  padding: 8rem 6.4rem 4rem 6rem;
-  overflow-y: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 8rem 0 4rem 0;
 }
 .modal-box .modal .modal-wrap {
   display: flex;
   gap: 2.4rem;
-  max-width: 90vw;
-  max-height: 90vh;
+  height: 100%;
   position: relative;
+  padding: 0 6.4rem 0 6rem;
+  overflow-y: auto;
 }
 .modal-box .modal > .close {
   position: absolute;
@@ -1145,6 +1159,9 @@ html.modal-active body {
   color: #121212;
   word-break: keep-all;
 }
+.modal-box .modal .con-wrap .con p + p {
+  margin-top: 1.5rem;
+}
 .modal-box .modal .photo {
   display: block;
   position: relative;
@@ -1165,6 +1182,12 @@ html.modal-active body {
   right: -0.2rem;
 }
 
+html[lang=en] .sec[data-slide=overview] .page-wrap p {
+  height: 36rem;
+}
+html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide {
+  height: 59.8rem;
+}
 html[lang=en] .sec[data-slide=greeting] .greeting {
   padding-right: calc(100% - 88rem);
 }
@@ -1183,15 +1206,12 @@ html[lang=en] .sec[data-slide=location] .map {
 html[lang=en] .sec[data-slide=location] .map img {
   position: absolute;
 }
+html[lang=en] .sec[data-slide=location] .location-info .location-box .location-item .title {
+  width: 12rem;
+}
 html[lang=en] .sec[data-slide=location] .banner-box {
   padding-left: calc(50% - 670px);
   padding-right: calc(50% - 670px);
-}
-html[lang=en] .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide {
-  height: 49.8rem;
-}
-html[lang=en] .sec[data-slide=overview] .page-wrap p {
-  height: 36rem;
 }
 
 .sec .label {
@@ -1451,6 +1471,12 @@ html[lang=en] .sec[data-slide=overview] .page-wrap p {
   .sec[data-slide=overview] .theme-wrap .swiper {
     padding-right: 4%;
   }
+  .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide {
+    height: 59.8rem;
+  }
+  .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide .con .text br {
+    display: none;
+  }
   html[lang=en] .sec[data-slide=greeting] .greeting {
     padding-right: 50rem;
   }
@@ -1586,8 +1612,8 @@ html[lang=en] .sec[data-slide=overview] .page-wrap p {
     font-size: 3.2rem;
   }
   .sec[data-slide=program] .table .table-item .speaker {
-    min-width: 27rem;
-    max-width: 27rem;
+    min-width: 36rem;
+    max-width: 36rem;
   }
   .sec[data-slide=greeting] .greeting .host-img {
     transform: scale(0.8);
@@ -1626,8 +1652,27 @@ html[lang=en] .sec[data-slide=overview] .page-wrap p {
   .header .language .lang-item {
     font-size: 14px;
   }
+  .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-wrapper {
+    flex-direction: column;
+  }
+  .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide .con {
+    height: auto;
+  }
+  .sec[data-slide=overview] .btn-wrap {
+    padding-bottom: 0;
+  }
   .sec[data-slide=program] .wrap {
     padding-top: 4rem;
+  }
+  .sec[data-slide=program] .table {
+    overflow-x: auto;
+  }
+  .sec[data-slide=program] .table .table-list {
+    min-width: 645px;
+    border-radius: 0;
+  }
+  [lang=en] .sec[data-slide=program] .table .table-list {
+    min-width: 800px;
   }
   .sec[data-slide=location] {
     padding-top: 10rem;
@@ -1732,74 +1777,8 @@ html[lang=en] .sec[data-slide=overview] .page-wrap p {
     height: 34rem;
     font-size: 18px;
   }
-  .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-wrapper {
-    flex-direction: column;
-  }
-  .sec[data-slide=overview] .theme-wrap .overview-slide .swiper-slide .con {
-    height: auto;
-  }
-  .sec[data-slide=program] {
-    /*  .table {
-      .table-list {
-        gap: 8px;
-      }
-      .table-item {
-        flex-wrap: wrap;
-        gap: 0;
-        border-radius: 1.6rem;
-        overflow: hidden;
-        .time,
-        .during,
-        .introduce,
-        .speaker {
-          min-width: 0;
-          max-width: none;
-        }
-        .time {
-          width: 20rem;
-        }
-        .during {
-          width: calc(100% - 20rem);
-          justify-content: flex-start;
-          position: relative;
-          &::before {
-            display: block;
-            position: absolute;
-            left: -0.3rem;
-            top: calc(50% - 1rem);
-            width: 1px;
-            height: 1.6rem;
-            background-color: var(--color-black);
-            content: "";
-          }
-        }
-        .introduce {
-          display: block;
-          width: 100%;
-          margin-top: 2px;
-          .badges {
-            margin-bottom: 6px;
-            .badge {
-              font-size: 12px;
-            }
-            .hidden-badges {
-              display: inline-flex;
-              gap: 2px;
-            }
-          }
-        }
-        .speaker {
-          display: none;
-        }
-      }
-    }*/
-  }
-  .sec[data-slide=program] .table {
-    overflow-x: auto;
-  }
-  .sec[data-slide=program] .table .table-list {
-    min-width: 645px;
-    border-radius: 0;
+  .sec[data-slide=program] .wrap {
+    padding-bottom: 4rem;
   }
   .sec[data-slide=greeting] {
     padding-bottom: 0;

@@ -251,23 +251,25 @@ var swiper = new Swiper(".fade-slide", {
     var $this = $(this),
       thisModalId = $this.attr("data-modal"),
       $modalBox = $(".modal-box");
-    $modalBox.addClass("active");
-    // modalData
-    if (modalData) {
-      modalData.forEach(function (elem) {
-        if (elem.id == thisModalId) {
-          const { id, speaker, content } = elem;
-          $modalBox.find(".title h2").text(speaker.name);
-          $modalBox.find(".title .role").text(speaker.role);
-          $modalBox.find(".title .company").text(speaker.company);
-          $modalBox.find(".con-wrap .con").html(content);
-          $modalBox
-            .find(".photo > img")
-            .attr({ src: speaker.image, alt: speaker.name });
-        }
-      });
+    if (thisModalId !== "0" && thisModalId !== "2") {
+      $modalBox.addClass("active");
+      // modalData
+      if (modalData) {
+        modalData.forEach(function (elem) {
+          if (elem.id == thisModalId) {
+            const { id, speaker, content } = elem;
+            $modalBox.find(".title h2").text(speaker.name);
+            $modalBox.find(".title .role").text(speaker.role);
+            $modalBox.find(".title .company").text(speaker.company);
+            $modalBox.find(".con-wrap .con").html(content);
+            $modalBox
+              .find(".photo > img")
+              .attr({ src: speaker.image, alt: speaker.name });
+          }
+        });
+      }
+      $("html").addClass("modal-active");
     }
-    $("html").addClass("modal-active");
   });
 
   $(".modal-box .close").on("click", function () {
