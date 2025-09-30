@@ -682,7 +682,8 @@ html.modal-active body {
   justify-content: flex-end;
 }
 .sec[data-slide=program] .unit .label {
-  zoom: 0.8;
+  zoom: 0.7;
+  border: 0;
 }
 .sec[data-slide=greeting] {
   overflow: hidden;
