@@ -677,6 +677,10 @@ html.modal-active body {
 .sec[data-slide=program] .badges .badge.bg-red {
   background-color: #ea5550;
 }
+.sec[data-slide=program] .unit {
+  display: flex;
+  justify-content: flex-end;
+}
 .sec[data-slide=greeting] {
   overflow: hidden;
   position: relative;
