@@ -745,6 +745,10 @@ html.modal-active {
         }
       }
     }
+    .unit {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   &[data-slide="greeting"] {
     overflow: hidden;
